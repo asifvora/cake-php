@@ -19,7 +19,7 @@
                 <legend><?= __('Add Department')?></legend>
                 <?php
                 echo $this->Form->control('name', array('type'=>'text', 'name'=>'name[][name]', 'id'=>'name', 'style'=>'width:500px;', 'oninvalid'=>'setCustomValidity("Enter Department Name")'));
-                ?>
+                ?>adad
                 <div class="add_div"> </div>
             </fieldset>
             <?php echo $this->Html->link('Add More', '#', array('style'=>'float:right;', 'class'=>'add_more', 'onclick'=>'Add_More() ;', 'title'=>'Add More'));?> <br><br>
