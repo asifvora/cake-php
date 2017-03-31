@@ -1,0 +1,329 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width: 1140px) and (min-width: 800px)
+{ 
+#medical_technology_schools #mainpage.technologist_salray section#mts_seach_programs{ height:100%;}
+#medical_technology_schools #mainpage.program_page .mts_title.blog .blog_page .authorblog{ width:75.416667%;}
+#medical_technology_schools #mainpage.program_page .program_search_page .mts_program_health{ width:61%;}
+#medical_technology_schools #mainpage.program_page #mts_seach_programs h1 {padding-top: 72px;}
+.wrapper{ width:98%; margin:0 auto; display:block;}
+#medical_technology_schools #mainpage .medical_programs{ margin-right:40px; width:473px;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .blog_img{ margin-right:42px; }
+#medical_technology_schools #mainpage .goto_top{ display:none;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .medicaltechnology_blog .medicaltechnology_blog_title{ width:100%;}
+#medical_technology_schools #mainpage .medical_programs{ width:50%; margin-left:0; margin-right:0;}
+#medical_technology_schools #mainpage .medical_programs .medical_program_detail{ float:right;}
+#medical_technology_schools #mainpage .medical_programs.mts-right .medical_program_detail{ float:left;}
+#medical_technology_schools #mainpage.program_page #mts_seach_programs{ height:100px;}
+footer .wrapper .goto_top {position: absolute;right: -8px;bottom: 106px;height: 42px;width: 42px;opacity: 0.3;}
+header .logo{ padding:25px 0;}
+header .header_rightside{ padding:42px 0 0 0;}
+.bread-crumb{ top:125px;}
+#medical_technology_schools #mainpage.program_page .program_search_page .mts_program_health .program_process{ -webkit-box-shadow:0px 1px 2px 1px rgba(0, 0, 0, 0.2),0px -1px 2px 0px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 2px 1px rgba(0, 0, 0, 0.2) ,0px -1px 2px 0px rgba(0, 0, 0, 0.2); -ms-box-shadow:0px 1px 2px 1px rgba(0, 0, 0, 0.2),0px -1px 2px 0px rgba(0, 0, 0, 0.2); box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2),0px -1px 2px 0px rgba(0, 0, 0, 0.2);} 
+}
+
+@media screen and (max-width: 799px) and (min-width: 598px)
+{
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-img strong{ padding-top:6px; font-size:15px; line-height:20px;} 	
+#medical_technology_schools #mainpage.program_page .cardio-technology-table p.resource b{width: 18%;}
+#medical_technology_schools #mainpage.program_page .cardio-technology-table p.resource span{ width:82%;}	
+#medical_technology_schools #mainpage.program_page .mts_title.cardio-technology-text p.resource b{width: 18%;}	
+#medical_technology_schools #mainpage.program_page .mts_title.cardio-technology-text p.resource span{ width:82%;}
+#medical_technology_schools #mainpage.privacy_policy .policylist ul{ margin-bottom:0;}
+#medical_technology_schools #mainpage.program_page.privacy_policy #mts_seach_programs h1{ padding-top:50px;}	
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_title .cardiovascular_tech ul li span{ width:39.835616%;}	
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_title .cardiovascular_tech ul li b{ width:60.164384%;}	
+#medical_technology_schools #mainpage.technologist_salray .search_tool{ width:100%; margin-bottom:30px; text-align:center;}	
+#medical_technology_schools #mainpage.program_page.inteviewx #mts_seach_programs h1{ padding:50px 0;}
+/*#fast_fact_table_main
+#fast_fact_table_main thead, 
+#fast_fact_table_main tbody, 
+#fast_fact_table_main th,
+#fast_fact_table_main td,
+#fast_fact_table_main tr {display: block !important; box-sizing:content-box !important;}
+#fast_fact_table_main thead tr{position: absolute !important;top: -9999px !important;left: -9999px !important;}
+#fast_fact_table_main tr {*/ /*border: 1px solid #ccc !important; *//*}	*/
+/*#fast_fact_table_main tbody tr td { border: none;border-bottom: 1px solid #eee; position: relative;padding-left:49% !important;word-wrap: break-word;width:50% !important;border-right:0 !important;}	
+#fast_fact_table_main td:before {position: absolute;left: 6px;width: 45%;padding-right: 10px;white-space: normal;}
+#fast_fact_table_main td:nth-of-type(1):before { content: "Fast Facts ";color: #fd833e;  }
+#fast_fact_table_main td:nth-of-type(2):before { content: "Cardiovascular Technologist ";color: #00acb3;}
+#fast_fact_table_main td:nth-of-type(3){display:none;}	*/
+#medical_technology_schools #mainpage.program_page .onlineprogrm{ margin-top:50px;}	
+#medical_technology_schools #mainpage.program_page .source_url{ margin-top:30px;}
+#medical_technology_schools #mainpage.program_page .elective_cource{ margin-top:0;}	
+footer .wrapper .goto_top {position: absolute;right:3px;bottom: 106px;height: 42px;width: 42px;opacity: 0.3;}
+#medical_technology_schools #mainpage.program_page #mts_seach_programs h1 {padding-top: 22px; }
+#medical_technology_schools #mainpage.program_page .mts_related .related_programs{ width:100%; margin-bottom:100px;}	
+#medical_technology_schools #mainpage.program_page .mts_title.blog .blog_page .authorblog{ width:100%; margin-bottom: 50px; margin-bottom:50px; text-align:center;}	
+#medical_technology_schools #mainpage.program_page .mts_title.blog .blog_page .authorpic{ float:none; text-align:center; margin-right:0;}	
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology{ float:left; width:100%; margin-bottom:30px;}	
+#medical_technology_schools #mainpage.program_page .elective_cource{ position:inherit;}	
+#medical_technology_schools #mainpage.program_page .elective_cource .elective_option{width: 100%; margin: 40px 0; position:inherit; left:0; top:0; padding:40px 0;}
+#medical_technology_schools #mainpage.program_page .elective_cource .core {float: left;width: 100%;}
+#onlineprogram_table_main,  
+#onlineprogram_table_main thead, 
+#onlineprogram_table_main tbody, 
+#onlineprogram_table_main th,
+#onlineprogram_table_main td,
+#onlineprogram_table_main tr {display: block !important; box-sizing:content-box !important;}
+#onlineprogram_table_main thead tr{position: absolute !important;top: -9999px !important;left: -9999px !important;}
+#onlineprogram_table_main tr { /*border: 1px solid #ccc !important;*/ }	
+#onlineprogram_table_main tbody tr td { border: none;border-bottom: 1px solid #eee; position: relative;padding-left:49% !important;word-wrap: break-word;width:50% !important;border-right:0 !important;}		
+#onlineprogram_table_main td:before {position: absolute;left: 6px;width: 45%;padding-right: 10px;white-space: normal;}
+#onlineprogram_table_main td:nth-of-type(1):before { content: "School"; color: #00acb3;   }
+#onlineprogram_table_main td:nth-of-type(2):before { content: "City"; color: #00acb3;}
+#onlineprogram_table_main td:nth-of-type(3):before { content: "State"; color: #00acb3; }
+#onlineprogram_table_main td:nth-of-type(4):before { content: "Website"; color: #00acb3; }
+#onlineprogram_table_main td:nth-of-type(5):before { content: "Total grads (2013)";color: #00acb3; }
+#medical_technology_schools #mainpage .dataTables_info{ width:100%; text-align:center; float:none;}
+#medical_technology_schools #mainpage .dataTables_paginate{ float:left; text-align:center; width:100%;}
+#medical_technology_schools #mainpage.program_page .mts_school_table{ padding:50px 0;}
+#medical_technology_schools #mainpage.program_page .mts_school_table .school_table .school_table_head i{ width:28%;}
+#medical_technology_schools #mainpage.program_page .program_search_page .mts_program_health{ float:left; width:100%;}
+#medical_technology_schools #mainpage.program_page .program_search_page .search_tool{float: none;text-align: center;width: 100%;margin: 0 auto; margin-bottom:30px;}
+#medical_technology_schools #mainpage.program_page .program_search_page{ padding:50px 0;}
+#mtsschool_table_main, 
+#mtsschool_table_main thead, 
+#mtsschool_table_main tbody, 
+#mtsschool_table_main th,
+#mtsschool_table_main td,
+#mtsschool_table_main tr {display: block !important; box-sizing:content-box !important;}
+#mtsschool_table_main thead tr{position: absolute !important;top: -9999px !important;left: -9999px !important;}
+#mtsschool_table_main tr {/* border: 1px solid #ccc !important;*/ }	
+#mtsschool_table_main tbody tr td { border: none;border-bottom: 1px solid #eee; position: relative;padding-left:49% !important;word-wrap: break-word;width:50% !important;border-right:0 !important;}		
+#mtsschool_table_main td:before {position: absolute;left: 6px;width: 45%;padding-right: 10px;white-space: normal;}
+#mtsschool_table_main td:nth-of-type(1):before { content: "School"; color: #00acb3;}
+#mtsschool_table_main td:nth-of-type(2):before { content: "City";color: #00acb3; }
+#mtsschool_table_main td:nth-of-type(3):before { content: "State"; color: #00acb3;}
+#mtsschool_table_main td:nth-of-type(4):before { content: "Website"; color: #00acb3;}
+#mtsschool_table_main td:nth-of-type(5):before { content: "Total grads (2013)"; color: #00acb3;}
+#mtsschool_table_main td:nth-of-type(3){display:none;}
+.bread-crumb{ position:inherit;}
+header{ position:relative;}
+#medical_technology_schools{ padding-top:0;}
+.wrapper{ width:98%; margin:0 auto; display:block;}
+header .logo{ width:100%; text-align:center; float:none; display:inline-block; padding:20px 0;}
+header{ text-align:center;}
+header .header_rightside .search{ text-align:left;}
+header .header_rightside{ float:none; padding:0 0 20px 0;}
+#medical_technology_schools #mainpage #mts_seach_programs h1{ padding:50px 0;}
+#medical_technology_schools #mainpage #mts_seach_programs .search_tool{ margin:10px 20px 30px 0;}
+#medical_technology_schools #mainpage #mts_seach_programs{ padding-bottom:20px;}
+#medical_technology_schools #mainpage .mts_title{ padding:50px 0 0 0;}
+#medical_technology_schools #mainpage .heading{ padding-bottom:50px;}
+#medical_technology_schools #mainpage .medical_programs{ width:100%; margin-bottom:20px;}
+#medical_technology_schools #mainpage .medical_programs .medical_program_detail{ width:100%;}
+#medical_technology_schools #mainpage .medical_programs .medical_icon{ float:none;display: inline-block;padding-bottom: 20px;}
+#medical_technology_schools #mainpage .medical_programs .medical_program_detail h3{ text-align:center;}
+#medical_technology_schools #mainpage .medical_programs .medical_program_detail p{ text-align:center;}
+#medical_technology_schools #mainpage .medical_programs .medical_program_detail .medical_brd{ float:none; text-align:center; display:inline-block;}
+#medical_technology_schools #mainpage .medical_programs.mts-right{ display:none;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .blog_img{ width:100%; text-align:center; margin:0 auto; display:inline-block; float:none; margin-bottom:
+30px;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .medicaltechnology_blog{ width:100%;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology{ margin-bottom:40px;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .medicaltechnology_blog .medicaltechnology_blog_title{ width:100%;}
+#medical_technology_schools #mainpage .heading{ font-size:14px;}
+#medical_technology_schools #mainpage .goto_top{ display:none;}
+#medical_technology_schools #mainpage.program_page .program_search_page .mts_program_health .mts_fast_fact #fast_fact_table_main{ width:100%; overflow:hidden;}	
+#medical_technology_schools #mainpage.program_page .program_search_page .mts_program_health .mts_fast_fact{ width:100%;}
+#medical_technology_schools #mainpage.program_page .mts_title.blog .blog_page .authorblog{margin: 13px 0 0 0;width: 96%;float: none;}
+#medical_technology_schools #mainpage.program_page .mts_title.blog .blog_page .authorblog p{ text-align:center;}
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology.right{ margin-bottom:0;}
+#medical_technology_schools #mainpage .mts_related .related_programs.right{ margin-bottom:0;}
+#medical_technology_schools #mainpage.program_page .mts_title.interview-blog ul{ margin-top:30px;}	
+#medical_technology_schools #mainpage.program_page .school_table table#mtsschool_table_main tbody tr td:last-child{ text-align:left;}	
+#medical_technology_schools #mainpage.program_page .onlineprogrm #onlineprogram_table_main tbody tr td{ text-align:left;}
+#medical_technology_schools #mainpage.program_page .mts_title.interview-blog li{ font-size:14px;}
+#medical_technology_schools #mainpage.program_page .mts_title.interview-blog .comment p{ font-size:14px;}
+
+
+}
+
+@media screen and (max-width: 597px) and (min-width: 320px)
+{
+#medical_technology_schools #mainpage .medical_programs .medical_program_detail h4{ text-align:center;}	
+#medical_technology_schools #mainpage.program_page #mts_seach_programs h1{width: 298px; text-align: center; float: none; display: inline-block;}	
+#medical_technology_schools #mainpage.program_page .source_url li{ font-size:14px; line-height:normal; margin-bottom: 10px; }	
+#medical_technology_schools #mainpage.program_page .onlineprogrm #onlineprogram_table_main tbody tr td{ text-align:left;}	
+#medical_technology_schools #mainpage.program_page .school_table table#mtsschool_table_main tbody tr td{ font-size:14px;}	
+#medical_technology_schools #mainpage.program_page .school_table table#mtsschool_table_main tbody tr td:last-child{ text-align:left;}	
+#medical_technology_schools #mainpage.program_page .mts_title.professors-blog ul li{ margin-left:24px;}	
+#medical_technology_schools #mainpage.program_page .mts_title.professors-blog ul{ float:left; width:100%;}	
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-text p.professors-line span{float: none; text-align: center;}	
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-text p.professors-line i{display: inline-block;float: none;position: relative;
+top: 10px;}	
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-text p.professors-line{text-align: center;}	
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-img strong{ font-size:16px;}	
+#medical_technology_schools #mainpage.program_page.inteviewx #mts_seach_programs h1	{ line-height: 54px; max-width: 290px; text-align: center; margin: 0 auto;}
+#medical_technology_schools #mainpage.program_page .mts_title.interview-blog ul{ margin-top:30px;}	
+#medical_technology_schools #mainpage.program_page .mts_title.interview-blog li{ font-size:14px;}	
+div.fancy-select{width: 229px;margin: 0 auto;}	
+#medical_technology_schools #mainpage.privacy_policy .policylist ul{ margin-bottom:0;}	
+#medical_technology_schools #mainpage.privacy_policy .mts_title p{ text-align:center;}	
+#medical_technology_schools #mainpage.program_page.privacy_policy #mts_seach_programs h1{ padding-top:50px;}	
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_title .cardiovascular_tech ul{ padding-bottom:0;}	
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_title .cardiovascular_tech ul li span{ text-align:center; width:100%;}	
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_title .cardiovascular_tech ul li b{ width:100%; text-align:center;}	
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_title .cardiovascular_tech ul li b:after{ content:' ';}
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_title .cardiovascular_tech ul{ width:98%; border:none;}	
+#medical_technology_schools #mainpage.technologist_salray #mts_seach_programs h1{ line-height:43px;}	
+	
+#medical_technology_schools #mainpage.program_page .cardio-technology-table p.resource span{ text-align:center; width:100%; float:none;}	
+#medical_technology_schools #mainpage.program_page .cardio-technology-table p.resource b{ float:none; text-align:center; width:100%;}	
+#medical_technology_schools #mainpage.program_page .cardio-technology-table .cardio-table .cardio-table-main{ width:100%;}	
+#medical_technology_schools #mainpage.program_page .mts_title.cardio-technology-text p.resource span{ float:none; text-align:center;}	
+#medical_technology_schools #mainpage.program_page .mts_title.cardio-technology-text p.resource b{ width:100%; text-align:center;}	
+#medical_technology_schools #mainpage.program_page .mts_title.cardio-technology-text ul li{ background-position:8px 10px;}	
+/*Top-Cardio-Tech-Professors.html*/
+#medical_technology_schools #mainpage.program_page .source_url .right_block{ margin-bottom:0;}	
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology.right{ padding-top:30px;}	
+header{ padding-bottom:0;}	
+/*Top-Cardio-Tech-Professors.html end*/
+
+#medical_technology_schools #mainpage.program_page .mts_title.blog{ padding-bottom:50px;}	
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-text{ text-align:center;}
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-text i.bline{ float:none; text-align:center; display:inline-block;}
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-img{float: none; width: 100%; text-align: center; margin-bottom: 30px;}	
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-text{ float:none; width:100%;}
+	
+#medical_technology_schools #mainpage.program_page .mts_title.blog .blog_page .authorblog{ padding-bottom:0;}		
+#medical_technology_schools #mainpage.program_page .mts_title{ padding:50px 0;}	
+#medical_technology_schools #mainpage.program_page .program_search_page .search_tool{ width:100%;}	
+#medical_technology_schools #mainpage.program_page .program_search_page .search_tool img{ width:100%:}	
+#medical_technology_schools #mainpage.program_page .program_search_page .mts_program_health .mts_fast_fact #fast_fact_table_main{ width:100%;}	
+#medical_technology_schools #mainpage.program_page .program_search_page .mts_program_health .mts_fast_fact{ width:100%;}	
+#medical_technology_schools #mainpage.program_page .program_search_page{ padding:50px 0; box-sizing:border-box;}	
+#medical_technology_schools #mainpage.program_page .program_search_page p{ text-align:center; font-size:14px;}	
+#fast_fact_table_main tr{ overflow:hidden;}		
+footer .wrapper .goto_top{ display:none;}
+#medical_technology_schools #mainpage.program_page .mts_paragraph p{ text-align:center;}
+#medical_technology_schools #mainpage.program_page .mts_title.blog .blog_page .authorblog p{ font-size:14px; text-align:center;} 
+#medical_technology_schools #mainpage .mts_related .related_programs ul li{ font-size:14px; padding:10px 0;}	
+#medical_technology_schools #mainpage .mts_related .related_programs h3{ font-size:20px; padding-bottom:10px;}	
+#medical_technology_schools #mainpage.program_page .elective_cource{ margin-top:0;}		
+#medical_technology_schools #mainpage.program_page .elective_cource{ position:inherit;}	
+#medical_technology_schools #mainpage.program_page .elective_cource .elective_option{width: 100%; margin: 40px 0; position:inherit; left:0; top:0; padding:40px 0;}
+#medical_technology_schools #mainpage.program_page .elective_cource .core {float: left;width: 100%;}
+#medical_technology_schools #mainpage .dataTables_paginate{ margin-top:20px;}	
+#medical_technology_schools #mainpage.program_page .onlineprogrm{ margin-top:40px;}	
+#medical_technology_schools #mainpage .dataTables_paginate #offline-schools_next{ float:none; display:inline-block; margin-right: 0; font-size: 12px; padding: 4px 4px;}	
+#medical_technology_schools #mainpage .paginate_button{ display:inline-block; float:none; font-size: 12px; margin:0;}	
+#medical_technology_schools #mainpage .dataTables_paginate span{ float:none; display:inline-block; padding: 0px 2px; margin-right:0;}
+#medical_technology_schools #mainpage .dataTables_info{ width:100%; text-align:center; float:none;}
+#medical_technology_schools #mainpage .dataTables_paginate{ float:left; text-align:center; width:100%;}	
+#medical_technology_schools #mainpage.program_page .source_url{ background:none; padding:0;  margin-top:30px;}	
+#medical_technology_schools #mainpage.program_page .source_url .right_block	{float: left; width: 100%; background: #34495e; padding: 10px; box-sizing: border-box; }
+#medical_technology_schools #mainpage.program_page .source_url .left_block{float: left; width: 100%; background: #2d3e50; padding: 10px; box-sizing: border-box; }	
+#medical_technology_schools #mainpage.program_page .mts_related .related_programs:last-child{ margin-bottom:0;}	
+#medical_technology_schools #mainpage.program_page .mts_related .related_programs{ width:100%; margin-bottom:70px;}	
+#medical_technology_schools #mainpage.program_page .mts_title.blog .blog_page .authorblog{ text-align:center; width:100%; float:left;}	
+#medical_technology_schools #mainpage.program_page .mts_title.blog .blog_page .authorpic{float: none;margin-right: 0;display: inline-block;text-align: center;width: 100%; }	
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology ul li a{ float:none; font-size: 14px;}	
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology strong{ padding-bottom:20px; font-size:20px;}	
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology{ width:100%;}	
+#medical_technology_schools #mainpage.program_page .mts_school_table .school_table .school_table_head i{width: 326px; text-align: center; float: none; margin: 0 auto; display:block;
+box-sizing: border-box; background-position: 70px 4px; padding-bottom: 40px;}	
+div.fancy-select div.trigger{float: none;display: inline-block;text-align: left;}	
+#medical_technology_schools #mainpage form#offline-school{display: inline-block;float: none;text-align: center;margin: 0 auto;width: 100%;padding-right: 0;}	
+#medical_technology_schools #mainpage.program_page .mts_school_table .school_table .school_table_head{ padding:6px 0;}	
+#medical_technology_schools #mainpage.program_page .mts_school_table{ padding:30px 0;}	
+#medical_technology_schools #mainpage .heading{ font-size:14px;}	
+#fast_fact_table_main td:nth-of-type(2):before{ font-size:14px;}	
+#medical_technology_schools #mainpage.program_page .program_search_page #fast_fact_table_main tbody td{ font-size:14px; min-height:40px;}
+#medical_technology_schools #mainpage.program_page .program_search_page .search_tool{ margin-bottom: 30px; float:none; text-align:center; /*display:inline-block;*/ display:none; margin:0  0 40px auto; width:100%;}	
+#medical_technology_schools #mainpage.program_page .program_search_page .mts_program_health .program_process{ width:100%; box-sizing:border-box;}	
+#medical_technology_schools #mainpage.program_page .program_search_page .mts_program_health{ float:left; width:100%;}	
+#fast_fact_table_main
+#fast_fact_table_main thead, 
+#fast_fact_table_main tbody, 
+#fast_fact_table_main th,
+#fast_fact_table_main td,
+#fast_fact_table_main tr {display: block !important; box-sizing:content-box !important;}
+#fast_fact_table_main thead tr{position: absolute !important;top: -9999px !important;left: -9999px !important;}
+#fast_fact_table_main tr { /*border: 1px solid #ccc !important; */}	
+#fast_fact_table_main tbody tr td { border: none;border-bottom: 1px solid #eee; position: relative;padding-left:49% !important;word-wrap: break-word;width:50% !important;border-right:0 !important;}	
+#fast_fact_table_main td:before {position: absolute;left: 6px;width: 45%;padding-right: 10px;white-space: normal;}
+#fast_fact_table_main td:nth-of-type(1):before { content: "Fast Facts ";color: #fd833e;  }
+#fast_fact_table_main td:nth-of-type(2):before { content: "Cardiovascular Technologist ";color: #00acb3;}
+#fast_fact_table_main td:nth-of-type(3){display:none;}	
+#onlineprogram_table_main,  
+#onlineprogram_table_main thead, 
+#onlineprogram_table_main tbody, 
+#onlineprogram_table_main th,
+#onlineprogram_table_main td,
+#onlineprogram_table_main tr {display: block !important; box-sizing:content-box !important;}
+#onlineprogram_table_main thead tr{position: absolute !important;top: -9999px !important;left: -9999px !important;}
+#onlineprogram_table_main tr { /*border: 1px solid #ccc !important;*/ }	
+#onlineprogram_table_main tbody tr td { border: none;border-bottom: 1px solid #eee; position: relative;padding-left:49% !important;word-wrap: break-word;width:50% !important;border-right:0 !important;}		
+#onlineprogram_table_main td:before {position: absolute;left: 6px;width: 45%;padding-right: 10px;white-space: normal;}
+#onlineprogram_table_main td:nth-of-type(1):before { content: "School"; color: #00acb3; }
+#onlineprogram_table_main td:nth-of-type(2):before { content: "City"; color: #00acb3;}
+#onlineprogram_table_main td:nth-of-type(3):before { content: "State"; color: #00acb3;}
+#onlineprogram_table_main td:nth-of-type(4):before { content: "Website";color: #00acb3; }
+#onlineprogram_table_main td:nth-of-type(5):before { content: "Total grads (2013)"; color: #00acb3;}
+
+#mtsschool_table_main, 
+#mtsschool_table_main thead, 
+#mtsschool_table_main tbody, 
+#mtsschool_table_main th,
+#mtsschool_table_main td,
+#mtsschool_table_main tr {display: block !important; box-sizing:content-box !important;}
+#mtsschool_table_main thead tr{position: absolute !important;top: -9999px !important;left: -9999px !important;}
+#mtsschool_table_main tr { /*border: 1px solid #ccc !important;*/ }	
+#mtsschool_table_main tbody tr td { border: none;border-bottom: 1px solid #eee; position: relative;padding-left:49% !important;word-wrap: break-word;width:50% !important;border-right:0 !important;}		
+#mtsschool_table_main td:before {position: absolute;left: 6px;width: 45%;padding-right: 10px;white-space: normal;}
+#mtsschool_table_main td:nth-of-type(1):before { content: "School"; color:#00acb3; }
+#mtsschool_table_main td:nth-of-type(2):before { content: "City"; color:#00acb3;  }
+#mtsschool_table_main td:nth-of-type(3):before { content: "State";  color:#00acb3; }
+#mtsschool_table_main td:nth-of-type(4):before { content: "Website"; color:#00acb3; }
+#mtsschool_table_main td:nth-of-type(5):before { content: "Total grads (2013)";  color:#00acb3;}
+#mtsschool_table_main td:nth-of-type(3){display:none;}
+
+.bread-crumb{ position:inherit;} 	
+header{ position:relative;}
+#medical_technology_schools{ padding-top:0;}
+#medical_technology_schools #mainpage .goto_top{ display:none;}
+.wrapper{ width:98%; margin:0 auto; display:block; overflow:hidden;}
+header .logo img{ width:80%;}
+header .logo{ float:none; text-align:center; display:inline-block; padding: 20px 0;}
+header{ text-align:center;float: none; display:inline-block; }
+header .header_rightside{float: none;display:inline-block; padding:0 0 10px 0; width:100%;}
+header .header_rightside .search{ float:none; text-align:left; margin:0 0 10px 0;}
+header .header_rightside .search input{ outline:none;}
+header .header_rightside .social_icon{float: none;text-align: center;display: inline-block; margin:0 0 10px 8px;}
+#medical_technology_schools #mainpage #mts_seach_programs h1{ padding:22px 0; font-size:40px; line-height:54px;}
+#medical_technology_schools #mainpage #mts_seach_programs .search_tool{width: 100%;text-align: center;float: none; margin-top:0; margin-bottom:26px;}
+#medical_technology_schools #mainpage #mts_seach_programs .search_tool img{ width:98%;}
+#medical_technology_schools #mainpage #mts_seach_programs p{ font-size:14px;  -webkit-appearance:none;}
+#medical_technology_schools #mainpage .mts_title{ padding:20px 0;}
+#medical_technology_schools #mainpage .heading{ padding-bottom:20px;}
+#medical_technology_schools #mainpage .medical_programs{ width:100%; margin-bottom:20px;}
+#medical_technology_schools #mainpage .medical_programs .medical_program_detail{ width:100%;}
+#medical_technology_schools #mainpage .medical_programs .medical_icon{ float:none;display: inline-block;padding-bottom: 20px;}
+#medical_technology_schools #mainpage .medical_programs .medical_program_detail h3{ text-align:center;}
+#medical_technology_schools #mainpage .medical_programs .medical_program_detail p{ text-align:center;}
+#medical_technology_schools #mainpage .medical_programs .medical_program_detail .medical_brd{ float:none; text-align:center; display:inline-block;}
+#medical_technology_schools #mainpage .medical_programs.mts-right{ display:none;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .blog_img{ width:100%; height:100%; text-align:center; margin:0 auto; display:inline-block; float:none; margin-bottom:30px;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .medicaltechnology_blog p{ text-align:left;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .medicaltechnology_blog{width: 100%; float: none; text-align: center;display: inline-block;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology{ margin-bottom:40px;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .medicaltechnology_blog .medicaltechnology_blog_title{ width:92%; text-align:left;}
+#medical_technology_schools #mainpage .heading h2{ width:100%; word-break: break-word; font-size:25px;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .medicaltechnology_blog .medicaltechnology_blog_title h4{line-height: 29px; padding-bottom: 10px;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .blog_img img{ width:90%;}
+footer .copyright{ font-size:13px; float: none; text-align: center;}
+footer .mts_footer{padding: 22px 0; text-align:center; float:none;}
+footer .footer_menu{float: none; display: inline-block; text-align: center; padding-bottom: 10px;}
+footer .footer_menu li{ margin-right:24px;  font-size:13px;}
+#medical_technology_schools #mainpage #mts_seach_programs{ padding-bottom:0;}
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology ul li{ width:100%; display:inline-block;}
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology.right ul li i{float: none; text-align: center; margin: 10px auto; display:block;}
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology ul li a{width: 100%; text-align: center; line-height: normal;display: inline-block;
+min-height: inherit; padding-bottom: 10px }
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology ul li b{padding: 10px; width: 100%;display: inline-block;text-align: center;}
+
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology ul li i{float: none; text-align: center; margin: 10px auto; display:block;}
+}

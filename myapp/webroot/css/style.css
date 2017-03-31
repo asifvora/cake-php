@@ -1,0 +1,501 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	font-weight: normal;
+	padding: 0;
+	border: none;
+}
+.clear {
+	clear: both;
+	overflow: hidden;
+	height: 0;
+}
+ul li {
+	list-style: none;
+	text-decoration: none;
+}
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+
+
+.margin_right{ margin-right:0 !important;}
+
+@font-face {
+    font-family: 'open_sansbold_italic';
+    src: url('../webkit/opensans-bolditalic_1-webfont.eot');
+    src: url('../webkit/opensans-bolditalic_1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webkit/opensans-bolditalic_1-webfont.woff2') format('woff2'),
+         url('../webkit/opensans-bolditalic_1-webfont.woff') format('woff'),
+         url('../webkit/opensans-bolditalic_1-webfont.ttf') format('truetype'),
+         url('../webkit/opensans-bolditalic_1-webfont.svg#open_sansbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../webkit/opensans-bold-webfont.eot');
+    src: url('../webkit/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webkit/opensans-bold-webfont.woff') format('woff'),
+         url('../webkit/opensans-bold-webfont.ttf') format('truetype'),
+         url('../webkit/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('../webkit/opensans-extrabold-webfont.eot');
+    src: url('../webkit/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webkit/opensans-extrabold-webfont.woff') format('woff'),
+         url('../webkit/opensans-extrabold-webfont.ttf') format('truetype'),
+         url('../webkit/opensans-extrabold-webfont.svg#open_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../webkit/opensans-regular-webfont.eot');
+    src: url('../webkit/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webkit/opensans-regular-webfont.woff') format('woff'),
+         url('../webkit/opensans-regular-webfont.ttf') format('truetype'),
+         url('../webkit/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'oswaldbook';
+    src: url('../webkit/oswald-regular-webfont.eot');
+    src: url('../webkit/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webkit/oswald-regular-webfont.woff') format('woff'),
+         url('../webkit/oswald-regular-webfont.ttf') format('truetype'),
+         url('../webkit/oswald-regular-webfont.svg#oswaldbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('../webkit/opensans-italic_2.eot');
+    src: url('../webkit/opensans-italic_2.eot?#iefix') format('embedded-opentype'),
+         url('../webkit/opensans-italic_2.woff2') format('woff2'),
+         url('../webkit/opensans-italic_2.woff') format('woff'),
+         url('../webkit/opensans-italic_2.ttf') format('truetype'),
+         url('../webkit/opensans-italic_2.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body
+{ font-size: 16px; color: #465568; font-weight:normal;}
+
+#medical_technology_schools{ width:100%; float:left; padding-top:160px;}
+#medical_technology_schools #mainpage{width:100%; float:left; display:inline-block;}
+ header{ width: 100%; float: left; background: #ffffff; display: inline-block; position: fixed; top: 0; left: 0; z-index: 99999; box-shadow: 0 0 3px #d7d7d7;}
+ header .logo{ float:left; padding:45px 0 40px 0;}
+ header .header_rightside{ float:right; display:inline-block; line-height:0; padding:63px 0 0 0;}
+ header .header_rightside .search {display: inline-block;
+    float: left;
+	margin-right:50px;
+	
+}
+form#searchform {
+
+    float: left;
+}
+form#searchform .submit{background:url("../img/search_icon.png") no-repeat scroll center center #465568;
+    border: 0 none;
+    cursor: pointer;
+    float: left;
+    height: 40px;
+    overflow: hidden;
+    width: 42px;
+	border-radius:0;
+	 -webkit-appearance: none;
+	 outline:none;
+	}
+header .header_rightside .search .searchoption{  border: 0 none;
+ font-family: 'open_sansregular'; font-size:14px; font-weight:normal;  color:#fff;
+   -webkit-appearance: none;
+    outline: none;
+    padding: 10px 10px 11px 9px;
+    width: 212px;
+	background:#00adb3;
+	float:left;
+	border-radius:0;}	
+
+header .header_rightside .search input::-webkit-input-placeholder {
+   color: #fff;
+}
+header .header_rightside .search input:-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+header .header_rightside .search input::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+header .header_rightside .search input:-ms-input-placeholder { 
+   color: #fff;  
+}
+header .header_rightside  .social_icon{ float:left;}	
+header .header_rightside  .social_icon ul{}
+header .header_rightside  .social_icon ul li{ float:left; list-style:none; margin-right:10px;}
+header .header_rightside  .social_icon ul li:last-child{ margin-right:0;}
+.bread-crumb {
+    color: #5a5a5a;
+    float: left;
+    font-family: 'open_sansregular';
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 0;
+    width: 100%;
+	position: fixed;
+    top: 160px;
+    width: 100%;
+    z-index: 999999;
+	background:url(../img/breadcrumb_bg.jpg) no-repeat  center center;
+	background-size:cover;
+}
+
+ul.breadcrumb {
+    float: left;
+}
+
+ul.breadcrumb li {
+    color: #a0a0a0;
+    float: left;
+    list-style: outside none none;
+}
+
+
+ul.breadcrumb li {
+    color: #a0a0a0;
+    float: left;
+    list-style: outside none none;
+}
+
+.breadcrumbs {
+    color: #fff;
+}
+
+
+ul.breadcrumb li a {
+	background:url(../img/breadcrumb_arrow.png) no-repeat right center;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 10px;
+    padding: 0 15px 0 0;
+    text-decoration: none;
+}
+ 
+#medical_technology_schools #mainpage #mts_seach_programs { float:left; width:100%; display:inline-block; background:url(../img/seach_program_bg.jpg) no-repeat center center; background-size:cover; padding-bottom:70px; text-align:center;}
+#medical_technology_schools #mainpage #mts_seach_programs h1{  font-family: 'oswaldbook'; font-size:64px; line-height:64px;  font-weight:normal;color:#fff; text-transform:uppercase; text-align:center; padding:100px 0 90px 0; text-shadow: 1px 2px 0 #000;}
+
+#medical_technology_schools #mainpage #mts_seach_programs .search_tool{ float:left; margin:10px 33px 20px 0;}
+#medical_technology_schools #mainpage #mts_seach_programs p{ font-family: 'open_sansregular'; font-size:16px; color:#fff; line-height:33px; margin-bottom:30px; text-align:justify; font-weight:normal; -webkit-appearance:none;}
+#medical_technology_schools #mainpage .heading{ width:100%; float:left;}
+#medical_technology_schools #mainpage .heading h2{  font-family: 'open_sansextrabold'; font-size:28px; color:#fd833e; line-height:28px; font-weight:normal; text-align:center;
+ background:url(../img/title_icon.png) no-repeat center bottom;  padding-bottom: 40px; text-transform:uppercase; /*margin-bottom:30px;*/}
+ #medical_technology_schools #mainpage .heading p{ margin-top:25px;}
+#medical_technology_schools #mainpage .heading{ font-family: 'open_sansregular'; color:#062033; font-size:16px; line-height:24px; font-weight:normal; text-align:center; padding-bottom:100px;}
+#medical_technology_schools #mainpage .mts_title{ background:#fff; float:left; width:100%; display:inline-block; padding:100px 0 0 0; border-bottom:1px solid #e8e8e8;}
+#medical_technology_schools #mainpage .mts_title .mts_title_programs{ width:100%; text-align:center; display:inline-block;}
+#medical_technology_schools #mainpage .mts_title.mts_technology{ background:#f7f7f7;}
+#medical_technology_schools #mainpage .mts_title.mts_program{ background:#efefef;}
+#medical_technology_schools #mainpage .medical_programs{ float:left; width:442px; display:inline-block; margin-bottom: 73px;
+margin-right: 76px;}
+#medical_technology_schools #mainpage .medical_programs .medical_icon{ width:98px; height:48px; float:right;  text-align: center;}
+#medical_technology_schools #mainpage .medical_programs .medical_program_detail{ float:left; width:76%; }
+#medical_technology_schools #mainpage .medical_programs .medical_program_detail h4{  font-family: 'open_sansbold'; font-size:20px; font-weight:normal;  line-height:20px;  padding-bottom:18px; text-align:right;}
+#medical_technology_schools #mainpage .medical_programs .medical_program_detail h4 a{color:#00adb3; text-decoration:none;}
+#medical_technology_schools #mainpage .medical_programs .medical_program_detail h4 a:hover{color:#fd833e; }
+#medical_technology_schools #mainpage .medical_programs.mts-right{ margin-right:0; text-align:left;}
+#medical_technology_schools #mainpage .medical_programs.mts-right .medical_program_detail h4,
+#medical_technology_schools #mainpage .medical_programs.mts-right .medical_program_detail p{ text-align:left;}
+#medical_technology_schools #mainpage .medical_programs.mts-right .medical_icon,
+#medical_technology_schools #mainpage .medical_programs.mts-right .medical_program_detail .medical_brd{ float:left;}
+#medical_technology_schools #mainpage .medical_programs .medical_program_detail .medical_brd{border-bottom:3px solid #e5e5e5; width:50px; clear:both; float:right;   margin-bottom: 11px;}
+#medical_technology_schools #mainpage .medical_programs .medical_program_detail p{font-family: 'open_sansregular';  color:#465568; font-size:16px; line-height:30px; text-align:right;  clear:both;}
+#medical_technology_schools #mainpage .laboratory_technology_programs{ background:#f8f8f8; float:left; width:100%; display:inline-block; padding:100px 0 22px 0; border-bottom:1px solid #e8e8e8;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology{ float:left; width:100%; display:inline-block;  margin-bottom: 80px;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .blog_img{ float:left; width:347px; height:287px; margin-right:30px;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .blog_img img{ border-radius:5px;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .medicaltechnology_blog{ float:left; display:inline-block; width:58%;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .medicaltechnology_blog .medicaltechnology_blog_title{ float:left; border-left:5px solid #00adb3; padding-left:20px; width:100%; margin-bottom:20px; box-sizing: border-box;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .medicaltechnology_blog .medicaltechnology_blog_title h3{ font-family: 'open_sansregular'; font-size:22px;  font-weight:normal; line-height:14px;  padding-bottom: 20px;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .medicaltechnology_blog .medicaltechnology_blog_title h3 a{ color:#34495e; text-decoration:none;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .medicaltechnology_blog .medicaltechnology_blog_title h3 a:hover{ color:#00adb3;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .medicaltechnology_blog .medicaltechnology_blog_title span{ background:url(../img/calender.png) no-repeat center left; font-family: 'open_sansregular'; font-size:14px; font-weight:normal; color:#9a9ea4;    padding-left: 33px;}
+#medical_technology_schools #mainpage .mts_title.mts_technology .new_medicaltechnology .medicaltechnology_blog p{ font-family: 'open_sansregular'; font-size:16px; font-weight:normal;  color:#465568; line-height:26px;}
+footer{ background:url('../img/footer_bg.jpg') no-repeat; background-size:cover;   float: left;  width: 100%; }
+footer .mts_footer{ padding:32px 0 55px 0;}
+footer .footer_menu{ float:left;}
+footer .footer_menu li{ font-family: 'open_sansregular'; font-size:14px; font-weight:normal; color:#fff; float:left; margin-right:20px;}
+footer .footer_menu li:last-child{ margin-right:0;}
+footer .footer_menu li a{ color:#fff; text-decoration:none;}
+footer .footer_menu li a:hover{ color:#00adb3;}
+footer .copyright{font-family: 'open_sansregular'; font-size:14px; font-weight:normal; color:#fff; float:right; }
+footer .copyright span{ color:#fd833e;}
+footer .wrapper .goto_top{ position:absolute; right: -60px; bottom:25px; height:42px; width:42px;}
+footer .wrapper{position:relative;}
+.ua-firefox header .header_rightside .search .searchoption{ padding:10px 0 10px 9px;}
+
+
+/************************************Program_page************************************/
+
+
+#medical_technology_schools #mainpage.program_page #mts_seach_programs h1{}
+#medical_technology_schools #mainpage.program_page{width:100%; float:left; display:inline-block;}
+#medical_technology_schools #mainpage.program_page .program_search_page{/*background:#ffffff;*/ width:100%; float:left; display:inline-block; padding:100px 0;}
+#medical_technology_schools #mainpage.program_page  #mts_seach_programs{ height:146px;}
+#medical_technology_schools #mainpage.program_page .program_search_page #mts_seach_programs { height:146px;}
+#medical_technology_schools #mainpage.program_page .program_search_page .search_tool{  float:left;}
+#medical_technology_schools #mainpage.program_page .program_search_page .mts_program_health .program_process{ float:left; width:44.52296819787986%; display:inline-block; -webkit-box-shadow:0px 1px 2px 1px rgba(0, 0, 0, 0.3); -moz-box-shadow:0px 1px 2px 1px rgba(0, 0, 0, 0.3) ;-ms-box-shadow:0px 1px 2px 1px rgba(0, 0, 0, 0.3); box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3); padding:3.18021201413428% 1.76678445229682%; margin-right:22px; margin-bottom: 18px;}
+
+
+
+#medical_technology_schools #mainpage.program_page .program_search_page .mts_program_health .program_process .program_process_title{ float:left; width:100%;padding-bottom: 13px;}
+#medical_technology_schools #mainpage.program_page .program_search_page .mts_program_health .program_process .program_process_title i{ float:left; padding-right: 14px;}
+#medical_technology_schools #mainpage.program_page .program_search_page .mts_program_health .program_process .program_process_title h4{  font-family: 'open_sansbold'; font-size:20px; font-weight:normal;  line-height:20px; color:#fd833e; text-transform:uppercase;}
+#medical_technology_schools #mainpage.program_page .program_search_page .mts_program_health .program_process .program_process_title span{ color:#11a8ab;}
+#medical_technology_schools #mainpage.program_page .program_search_page .mts_program_health .program_process .processbar{ float:left;}
+#medical_technology_schools #mainpage.program_page .program_search_page .mts_program_health{ float: right; width: 59%; display: inline-block;}
+#medical_technology_schools #mainpage.program_page .program_search_page  #fast_fact_table_main .faqtable{width: 100%;
+border-spacing: 0;
+border: 3px solid #3498db;}	
+#medical_technology_schools #mainpage.program_page .program_search_page .mts_program_health .mts_fast_fact #fast_fact_table_main{ font-family: 'open_sansregular';  font-size:16px;  border-right:none; border-bottom:none; color:#3b4a5b; background:#f8f8f8; border: 1px solid #efefef; border-right:0;}
+#fast_fact_table_main thead th{  font-family: 'open_sansbold'; font-weight:normal; font-size:16px;  width:30%; padding:10px 20px; color:#fff; text-align:left; background:#fd833e; text-transform: uppercase; border:none;}
+#medical_technology_schools #mainpage.program_page .program_search_page .mts_program_health .mts_fast_fact{ float:left; margin-bottom: 20px;}
+#medical_technology_schools #mainpage.program_page .program_search_page  #fast_fact_table_main tbody td{ font-family: 'open_sansregular';  font-weight:normal; color:#3b4a5b; font-size:16px; width:30%; padding:10px 20px;  border-right: 1px solid #efefef;line-height: 19px;}
+#medical_technology_schools #mainpage.program_page .program_search_page  #fast_fact_table_main tr:nth-child(even) { background:#ffffff;}	
+#medical_technology_schools #mainpage.program_page .program_search_page  #fast_fact_table_main tr th:nth-child(2){ background:#00acb3;}
+#medical_technology_schools #mainpage.program_page .program_search_page  #fast_fact_table_main tr td:nth-child(1), #fast_fact_table_main tr th:nth-child(1){ width:37.84911660777385%;}
+#medical_technology_schools #mainpage.program_page .program_search_page  #fast_fact_table_main tr td:nth-child(2), #fast_fact_table_main tr th:nth-child(2){ width:62.89752650176678%;}
+#medical_technology_schools #mainpage.program_page .program_search_page p{font-family: 'open_sansregular'; float:left; font-size: 16px;color: #3b4a5b;line-height: 33px;text-align: justify;
+font-weight: normal;
+-webkit-appearance: none;}
+#medical_technology_schools #mainpage.program_page .mts_title.degree_certification{/* background:url(../images/degree_certification_bg.jpg) no-repeat center top;*/ width:100%; background-size:cover;}
+#medical_technology_schools #mainpage.program_page .mts_school_table{ background:#f7f7f7; width:100%; float:left; display:inline-block;padding: 100px 0;border-bottom: 1px solid #e8e8e8;}
+#medical_technology_schools #mainpage.program_page .mts_school_table .school_table{ float:left; width:100%; display:inline-block;}
+#medical_technology_schools #mainpage.program_page .mts_school_table .school_table .school_table_head{ background:#00acb3; width:100%; float:left; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 6px 20px 8px 20px; box-sizing: border-box;}
+#medical_technology_schools #mainpage.program_page .mts_school_table .school_table .school_table_head i{ background:url(../img/filter.png) no-repeat left 4px; height:28px; line-height:28px; width:24px;padding-left: 33px;font-family: 'open_sansregular';  font-weight:normal; color:#fff; font-size:16px; font-weight:normal; font-style:normal; text-transform:uppercase; width: 16%;
+float: left; }
+select {
+    background: none repeat scroll 0 0 #2c3e50;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'open_sansregular'; 
+    font-size: 14px;
+    padding: 10px 8px;
+    width: 200px;
+}
+#medical_technology_schools #mainpage.program_page .medical_programs .medical_program_detail:last-child {
+margin-bottom: 0;
+}
+#medical_technology_schools #mainpage.program_page .school_table table#mtsschool_table_main,
+#medical_technology_schools #mainpage.program_page .school_table table#mtsschool_table_main tbody,
+#medical_technology_schools #mainpage.program_page .school_table table#mtsschool_table_main thead,
+#medical_technology_schools #mainpage.program_page .school_table table#mtsschool_table_main tr{display:inline-block; width:100%; float:left; overflow:hidden;}
+#medical_technology_schools #mainpage.program_page .school_table table#mtsschool_table_main tbody tr{ -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2); margin-bottom:20px; background:#fff;}
+#medical_technology_schools #mainpage.program_page  .school_table table#mtsschool_table_main thead tr{ background:#465568;  font-family: 'open_sansbold'; font-weight:normal; font-size:16px; color:#fff; text-transform:uppercase; text-align:left;}
+#medical_technology_schools #mainpage.program_page .school_table table#mtsschool_table_main tbody tr td{font-family:'open_sansregular'; font-weight:normal; font-size:16px; color:#465568; padding: 10px 20px; box-sizing: border-box;}
+#medical_technology_schools #mainpage.program_page .school_table table#mtsschool_table_main tbody tr td:last-child{ text-align:center; color:#465568;}
+#medical_technology_schools #mainpage.program_page .school_table table#mtsschool_table_main tbody tr:last-child{ margin-bottom:0;}
+#medical_technology_schools #mainpage.program_page .school_table table#mtsschool_table_main td,
+#medical_technology_schools #mainpage.program_page .school_table table#mtsschool_table_main th{padding:10px 20px; box-sizing:border-box;}
+#medical_technology_schools #mainpage.program_page .school_table table#mtsschool_table_main tr .school{width:20%; display:inline-block; float:left;}
+#medical_technology_schools #mainpage.program_page .school_table table#mtsschool_table_main tr .city{width:20%; display:inline-block; float:left;}
+#medical_technology_schools #mainpage.program_page .school_table table#mtsschool_table_main tr .state{width:18%; display:inline-block; float:left;}
+#medical_technology_schools #mainpage.program_page .school_table table#mtsschool_table_main tr .website{width:20%; display:inline-block; float:left;}
+#medical_technology_schools #mainpage.program_page .school_table table#mtsschool_table_main tr .total_grade{width:22%; display:inline-block; float:left;}
+#medical_technology_schools #mainpage.program_page .mts_title p{ color:#062033;}
+#medical_technology_schools #mainpage.program_page .onlineprogrm{ float:left; width:100%; margin-top:100px;}
+#medical_technology_schools #mainpage.program_page .onlineprogrm #onlineprogram_table_main,
+#medical_technology_schools #mainpage.program_page .onlineprogrm #onlineprogram_table_main tbody,
+#medical_technology_schools #mainpage.program_page .onlineprogrm #onlineprogram_table_main thead,
+#medical_technology_schools #mainpage.program_page .onlineprogrm #onlineprogram_table_main thead tr{width: 100%; float: left;}
+#medical_technology_schools #mainpage.program_page .onlineprogrm #onlineprogram_table_main thead tr { background:#465568;  font-family: 'open_sansbold'; font-weight:normal; font-size:16px; color:#fff; text-transform:uppercase;border-top-left-radius: 5px; border-top-right-radius: 5px;line-height: 16px; }
+#medical_technology_schools #mainpage.program_page .onlineprogrm #onlineprogram_table_main thead tr th{border-right:1px solid #354356; box-sizing: border-box;}
+#medical_technology_schools #mainpage.program_page .onlineprogrm #onlineprogram_table_main thead tr th:last-child{ border-right:0;}
+#medical_technology_schools #mainpage.program_page .onlineprogrm #onlineprogram_table_main tr .prg_shcool{width:25%;}
+#medical_technology_schools #mainpage.program_page .onlineprogrm #onlineprogram_table_main tr .prg_city{width:14%;}
+#medical_technology_schools #mainpage.program_page .onlineprogrm #onlineprogram_table_main tr .prg_state{width:13%;}
+#medical_technology_schools #mainpage.program_page .onlineprogrm #onlineprogram_table_main tr .prg_website{width:15%; word-break:break-all;}
+#medical_technology_schools #mainpage.program_page .onlineprogrm #onlineprogram_table_main tr .prg_grades{width:16%;}
+#medical_technology_schools #mainpage.program_page .onlineprogrm #onlineprogram_table_main thead tr th{ padding:16px 0;}
+#medical_technology_schools #mainpage.program_page .onlineprogrm #onlineprogram_table_main tbody tr td{font-family:'open_sansregular'; font-weight:normal; border-right:1px solid #e1e1e1;font-size:14px; color:#465568; text-align:center; line-height: 14px; padding: 17px 9px; box-sizing: border-box;}
+#medical_technology_schools #mainpage.program_page .onlineprogrm #onlineprogram_table_main tbody tr{ background:#efefef; }
+#medical_technology_schools #mainpage.program_page .onlineprogrm #onlineprogram_table_main tbody tr:nth-child(even){ background:#ffffff;}
+#medical_technology_schools #mainpage.program_page .onlineprogrm table#onlineprogram_table_main{ border-bottom:4px solid #465568;}
+#medical_technology_schools #mainpage.program_page .mts_paragraph p{ color:#fff; text-align:justify;}
+#medical_technology_schools #mainpage.program_page .mts_program_page p{ color:#062033; text-align:justify;}
+#medical_technology_schools #mainpage.program_page .elective_cource{ background: none repeat scroll 0 0 #fff; display: inline-block; float: left;  margin-top: 100px;  padding: 40px 0; position: relative;  width: 100%;}
+#medical_technology_schools #mainpage.program_page .elective_cource .core{ float: left;  width: 320px;}
+#medical_technology_schools #mainpage.program_page .elective_cource .core.right {float: right;}
+#medical_technology_schools #mainpage.program_page .elective_cource .core span{ float:left; font-family: 'open_sansbold'; font-weight:normal; text-align:center; color:#fd833e; line-height:24px; font-size:24px; width:100%; padding-bottom: 22px;}
+#medical_technology_schools #mainpage.program_page .elective_cource .core ul{ list-style:none; width:220px; text-align: center; margin: 0 auto; }
+#medical_technology_schools #mainpage.program_page .elective_cource .core ul li{ border-bottom:1px solid #f0f0f0; font-family:'open_sansregular'; color:#526572; text-transform:uppercase; font-weight:normal; font-size:16px;padding: 10px 0;line-height: 16px; padding: 12px 0;}
+#medical_technology_schools #mainpage.program_page .elective_cource .core ul li:last-child{ border-bottom:none;}
+#medical_technology_schools #mainpage.program_page .elective_cource .elective_option{  background: none repeat scroll 0 0 #00acb3;  float: left;  left: 50%;  margin-left: -120px;  
+ padding: 40px 0 112px;   position: absolute;    top: -50px;    width: 320px;}
+#medical_technology_schools #mainpage.program_page .elective_cource .elective_option span{ float:left; font-family: 'open_sansbold'; font-weight:normal; text-align:center; color:#ffffff; line-height:24px; font-size:24px; width:100%; padding-bottom: 22px;}
+#medical_technology_schools #mainpage.program_page .elective_cource .elective_option ul{ list-style:none; width:220px; text-align: center; margin: 0 auto; }
+#medical_technology_schools #mainpage.program_page .elective_cource .elective_option ul li{ border-bottom:1px solid #049ba1;font-family:'open_sansregular'; text-transform:uppercase; font-weight:normal; font-size:16px;padding: 10px 0; color:#eeeeee;}
+/*#medical_technology_schools #mainpage.program_page .mts_title.licensing_certification{ background:url(../images/licensing_certification_bg.jpg) no-repeat center top; width:100%; background-size:cover; border-bottom: none;}*/
+#medical_technology_schools #mainpage.program_page .source_url{background:url(../img/source_url_bg.jpg) repeat-y center top; width:100%; float:left; display:inline-block; padding:3.125%; box-sizing: border-box; margin-top: 100px;}
+#medical_technology_schools #mainpage.program_page .source_url .left_block{ float:left; width:48%;}
+#medical_technology_schools #mainpage.program_page .elective_cource .core ul li:last-child{ padding-bottom:0;}
+#medical_technology_schools #mainpage.program_page .source_url .right_block{ float:right; width:48%; display:inline-block;}
+#medical_technology_schools #mainpage.program_page .source_url li{background:url(../img/source_url.png) no-repeat 2px 10px; ;font-family:'open_sansregular'; font-weight:normal; font-size:16px; color:#fff; text-align:left; padding-left:28px;}
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology{ width:100%; float:left; display:inline-block; font-family:'open_sansregular'; color:#062033; text-transform:uppercase; font-weight:normal; font-size:16px;}
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology{ float:left; width:46.875%;}
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology.right{ float:right;}
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology strong{ font-family: 'open_sansbold'; font-weight:normal;  color:#fd833e; font-size:24px; text-transform:uppercase;line-height:29px; padding-bottom: 30px; float: left;}
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology ul{ float:left; display:inline-block; width:100%;}
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology ul li{ list-style:none; background:#f4f3f6; width:100%; float:left; display:inline-block;margin-bottom: 10px; }
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology ul li b{ background:#ebebeb; font-family: 'open_sansitalic'; font-size:12px; color:#062033; line-height:12px;float: right;padding: 20px; font-weight:normal;text-transform: none; }
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology ul li i{ background:/*url(../images/technology_sprite_img.png) no-repeat*/ #00acb3; width:50px; height:50px; float:left; margin-right:20px;}
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology ul li i span{display: table-cell;vertical-align: middle;float: none;height: 50px;width: 50px;
+text-align: center;}
+
+/*#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology ul li i.become{ background-position:10px 16px;}
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology ul li i.salary{ background-position:10px -65px;}
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology ul li i.certiication{ background-position:10px -145px;}
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology.right ul li i.professors{ background-position:10px -229px;}
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology.right ul li i.guidecareer{ background-position:10px -309px;}*/
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology ul li a{ text-decoration:none; min-height:50px; float:left; font-family:'open_sansregular'; color:#062033; font-weight:normal; font-size:16px; line-height:50px; text-transform:none;}
+#medical_technology_schools #mainpage.program_page .cardiovascular_technology .technology ul li a:hover{ color:#00acb3;}
+#medical_technology_schools #mainpage.program_page .mts_title.blog{ background:url(../img/blogpage.jpg) no-repeat center top; width:100%; background-size:cover; border-bottom: none; padding-bottom:100px;}
+#medical_technology_schools #mainpage.program_page .mts_title.blog .blog_page{ float:left; width:100%; display:inline-block;}
+#medical_technology_schools #mainpage.program_page .mts_title.blog .blog_page .authorpic{ float:left; margin-right: 40px;}
+#medical_technology_schools #mainpage.program_page .mts_title.blog .blog_page .authorpic img{  border: 8px solid rgb(255, 255, 255);     border-radius: 100px;}
+#medical_technology_schools #mainpage.program_page .mts_title.blog .blog_page .authorblog{ float:left; width:76.416667%; margin-top: 13px;}
+#medical_technology_schools #mainpage.program_page .mts_title.blog .blog_page .authorblog strong{ font-family: 'open_sansbold'; font-weight:normal; width:100%; padding-bottom:7px; color:#fd833e; font-size:26px; line-height:26px; float:left;}
+#medical_technology_schools #mainpage.program_page .mts_title.blog .blog_page .authorblog span{  font-family: 'open_sansitalic'; font-size:18px; color:#00acb3; font-weight:normal; padding-bottom:12px; width:100%; float:left;}
+#medical_technology_schools #mainpage.program_page .mts_title.blog .blog_page .authorblog p{ font-family:'open_sansregular'; color:#fff; font-size:16px; line-height:24px; text-align:justify;}
+#medical_technology_schools #mainpage.program_page .mts_related{ float:left; width:100%; display:inline-block;padding-top: 38px;}
+#medical_technology_schools #mainpage.program_page .mts_related .related_programs{ width:46.66666666666667%; display:inline-block; float:left;border: 1px solid #d4d4d4;
+border-radius:20px; position:relative;}
+#medical_technology_schools #mainpage .mts_related .related_programs.right{ float:right;}
+#medical_technology_schools #mainpage .mts_related .related_programs span{position: absolute; left: 50%; top: 0; margin: -57px 0 0 -57px; border: 18px solid #fff; display: inline-block; float: left;}
+#medical_technology_schools #mainpage .mts_related .related_programs span i{ background:url(../img/related_icon.png) no-repeat center center #42b8be; border-radius:100px; width:78px; height:78px; float:left; text-align:center;}
+#medical_technology_schools #mainpage .mts_related .related_programs h3{ font-family: 'open_sansbold'; font-weight:normal; font-size:28px; line-height:28px; color:#465568; text-transform:uppercase; text-align:center;padding-top: 58px; padding-bottom:21px;}
+#medical_technology_schools #mainpage .mts_related .related_programs ul {float: left; width:100%; padding-bottom: 43px;}
+#medical_technology_schools #mainpage .mts_related .related_programs ul li{ list-style:none; background:#f7f7f7; padding:18px 0; border-bottom:1px solid #dbdbdb; text-align:center;
+font-family:'open_sansregular'; color:#465568; font-size:20px; line-height:20px;}
+#medical_technology_schools #mainpage .mts_related .related_programs ul li:last-child{ border-bottom:none;}
+#medical_technology_schools #mainpage .mts_related .related_programs.right i{ background-color:#fd833e;}
+#medical_technology_schools #mainpage .dataTables_info{ float:left; display:inline-block; font-family:'open_sansregular'; color:#465568; font-size:16px; line-height:20px; margin-top: 35px;}
+#medical_technology_schools #mainpage .dataTables_paginate{ float:right; display:inline-block; margin-top: 37px;}
+#medical_technology_schools #mainpage .dataTables_paginate #offline-schools_next{ background:#465568; padding:5px; text-transform:uppercase; font-family:'open_sansregular'; color:#fff; font-size:16px; line-height:20px; margin-right:0;}
+#medical_technology_schools #mainpage .offline-schools_paginate{ font-family:'open_sansregular'; color:#fff; font-size:16px; line-height:20px;}
+#medical_technology_schools #mainpage .paginate_button {background:#465568; padding:4px 8px; text-transform:uppercase; font-family:'open_sansregular'; color:#fff; font-size:16px; line-height:20px; 
+margin:0 2px; outline:none; cursor:pointer;}
+#medical_technology_schools #mainpage .paginate_button.current{ background:#00adb3;}
+#medical_technology_schools #mainpage form#offline-school {display: inline-block;float: left; margin-top: 2px;}
+#medical_technology_schools #mainpage .dataTables_paginate span{margin-right: 10px; padding: 6px 8px;}
+#medical_technology_schools #mainpage .dataTables_info span{ color:#00adb3;}
+#medical_technology_schools #mainpage.program_page .heading{ padding-bottom:0;}
+#medical_technology_schools #mainpage.program_page .mts_title{ padding:100px 0;}
+
+/*****************26-12-2014*******************/
+#medical_technology_schools #mainpage.program_page .cardio-technology p{margin-top:25px; text-align: justify;font-family: 'open_sansregular'; color: #062033; font-size: 16px; line-height: 24px;}
+#medical_technology_schools #mainpage.program_page .cardio-technology p:first-child{margin-top:0;}
+#medical_technology_schools #mainpage.program_page .mts_title.cardio-technology-text{background:url(../img/cardio-technology_bg.jpg) no-repeat center top; background-size: cover;}
+#medical_technology_schools #mainpage.program_page .mts_title.cardio-technology-text ul{display:inline-block; float:left; margin: 25px 0;}
+#medical_technology_schools #mainpage.program_page .mts_title.cardio-technology-text ul li{padding:0 0 0 27px; background:url(../img/source_url.png) no-repeat 0 center;font-family: 'open_sansregular'; color: #fff;  font-size: 16px; line-height: 24px; text-align: left; margin-bottom: 5px;}
+#medical_technology_schools #mainpage.program_page .mts_title.cardio-technology-text p.resource{margin-top: 15px; display: inline-block; width: 100%;}
+#medical_technology_schools #mainpage.program_page .mts_title.cardio-technology-text p.resource b{display:inline-block; float:left; width:13%; font-weight:normal; color:#fd833e;}
+#medical_technology_schools #mainpage.program_page .mts_title.cardio-technology-text p.resource span{display:inline-block; float:right; width:87%;}
+#medical_technology_schools #mainpage.program_page .cardio-technology-table p{text-align:left;}
+#medical_technology_schools #mainpage.program_page .cardio-technology-table .cardio-table{position:relative; display:inline-block; float:left; width:99.99%; background:#465568; border-radius:5px 5px 0 0; overflow:hidden; margin: 25px 0;}
+#medical_technology_schools #mainpage.program_page .cardio-technology-table .cardio-table i{width:19px; height:19px;/* background:url(../images/cardio-table-bg.jpg) no-repeat 0 0; */position:absolute; bottom:0px; right:0;}
+#medical_technology_schools #mainpage.program_page .cardio-technology-table .cardio-table .cardio-table-main{display:inline-block; width:33.33333333333333%; float:left; box-sizing:border-box; border-right:1px solid #374658; text-align:left;} 
+#medical_technology_schools #mainpage.program_page .cardio-technology-table .cardio-table .cardio-table-main:last-child{border-right:none;}
+#medical_technology_schools #mainpage.program_page .cardio-technology-table .cardio-table .cardio-table-main .cardio-table-header{background:#00adb3; box-sizing:border-box; width:100%; height:73px; padding:0 30px; line-height:73px; font-family: 'open_sansbold'; color:#fff; text-transform:uppercase; font-size: 16px; margin:0;}
+#medical_technology_schools #mainpage.program_page .cardio-technology-table .cardio-table .cardio-table-main .cardio-table-data{padding:20px 30px; font-family: 'open_sansregular'; font-size:14px; color:#fff;  margin:0; line-height:18px; border-top:1px solid #374658;}
+#medical_technology_schools #mainpage.program_page .cardio-technology-table p.resource b{display:inline-block; float:left; width:13%; font-weight:normal; color:#fd833e;}
+#medical_technology_schools #mainpage.program_page .cardio-technology-table p.resource span{display:inline-block; float:right; width:87%;}
+
+
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors {display:inline-block; float:left; width:100%;}
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info{display:inline-block; float:left; width:100%; margin-bottom:40px;}
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors:last-child .professors-info{margin-bottom:0;}
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-img{display:inline-block; float:left; width:20.83333333333333%;}
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-img img{max-width:100%; border-bottom:5px solid #00adb3; }
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-text{display:inline-block; width:73.85416666666667%; float:right;}
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-text h3{font-weight:normal; font-size:23px; color:#fd833e; text-transform:uppercase; line-height:18px; display:block; margin-bottom:15px;  font-family: 'open_sansbold';}
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-text strong{font-weight:normal; font-size:16px; color:#00adb3; font-family: 'open_sansregular'; display:block; line-height:20px; margin-bottom: 10px;}
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-text i.bline {display: block;width: 50px;height: 3px;background: #cdcfd1;margin-bottom: 15px;}
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-text p.professors-line{display:inline-block; width:100%; float:left; border-bottom:1px solid #e6e7e8; margin-bottom: 8px; padding-bottom: 5px; margin-top:0;}
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-text p.professors-line i{background:url(../img/professors-icon.png) no-repeat; width:40px; height:30px; display: block; float: left;}
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-text p.professors-line i.one{background-position:0 3px;}
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-text p.professors-line i.two{background-position:0 -46px;}
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-text p.professors-line span{font-family: 'open_sansregular'; color:#465568; font-size:16px; line-height:28px; float:left;}
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-text p.professors-line span b{font-family: 'open_sansbold'; font-weight:normal;}
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-text p{font-family: 'open_sansregular'; font-size:16px; color:#465568;  font-weight:normal; line-height:24px; margin-bottom: 15px; margin-top: 5px;}
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-text p:last-child {margin-bottom: 0;}
+#medical_technology_schools #mainpage.program_page .mts_title.professors-blog{background:url(../img/professors.jpg) no-repeat center top; background-size: cover;}
+#medical_technology_schools #mainpage.program_page .mts_title.professors-blog ul{display:inline-block; float: right; width: 97.5%; list-style-type:decimal; text-align:left; color:#fd833e; margin-top:15px;}
+#medical_technology_schools #mainpage.program_page .mts_title.professors-blog ul li{list-style:inherit; margin-bottom: 5px;}
+#medical_technology_schools #mainpage.program_page .mts_title.professors-blog ul li span{color:#fff;}
+#medical_technology_schools #mainpage.program_page .program_search_page .tech-professors .professors-info .professors-img strong {display: block;text-align: center;color: #fd833e;font-family: 'open_sansregular';font-size: 18px;line-height: 35px;}
+#medical_technology_schools #mainpage.program_page .program_search_page.interview-page .tech-professors .professors-info p{margin-top:0; margin-bottom:20px;}
+#medical_technology_schools #mainpage.program_page .mts_title.interview-blog{background:#f7f7f7; border-top:1px solid #e8e8e8; border-bottom:1px solid #e8e8e8;}
+#medical_technology_schools #mainpage.program_page .mts_title.interview-blog.white{background:#fff;}
+#medical_technology_schools #mainpage.program_page .mts_title.interview-blog p{text-align:left; color:#062033;}
+#medical_technology_schools #mainpage.program_page .mts_title.interview-blog ul{margin:48px 0 15px 0; display:inline-block; width:100%; float:left;}
+#medical_technology_schools #mainpage.program_page .mts_title.interview-blog li{text-align:left; background: url(../img/source_url.png) no-repeat 2px 8px; font-family: 'open_sansregular'; font-weight: normal; font-size: 16px; padding-left:25px; margin-bottom:8px;}
+#medical_technology_schools #mainpage.program_page .mts_title.interview-blog .comment{ display: inline-block; width: 100%; float: left; text-align: center; margin:10px 0 20px 0;}
+#medical_technology_schools #mainpage.program_page .mts_title.interview-blog .comment_part{ display:inline-block;  float: left;    width: 53%;}
+#medical_technology_schools #mainpage.program_page .mts_title.interview-blog .comment p{  font-family: 'open_sansbold_italic'; font-size:17px; color:#364555; font-weight:normal;   line-height: 27px;  padding: 25px 20px; text-align:center; margin:0; width: 55%; display: inline-block; background:#f0efef;}
+
+/*****************26-12-2014*******************/
+
+#medical_technology_schools #mainpage.program_page.inteviewx{ padding-top:0;}
+#medical_technology_schools #mainpage.technologist_salray{ float:left; width:100%; display:inline-block;}
+#medical_technology_schools #mainpage.technologist_salray #mts_seach_programs{ height:100%;}
+#medical_technology_schools #mainpage.technologist_salray #mts_seach_programs h1{ line-height:75px;}
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_title.interview-blog{ border-top:none;}
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_list{ background:#fff;}
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_title.salary_data{ background:url(../img/salary_data.jpg) no-repeat center top; width:100%; background-size:cover;}
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_title .cardiovascular_tech{ float:left; width:100%; display:inline-block; padding-top:43px;} 
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_title .cardiovascular_tech h2{ color:#00adb3; background:none; padding-bottom:30px;WW}
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_title .cardiovascular_tech h2 span{ color:#fff;}
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_title .cardiovascular_tech ul{ float:none; width:76.04166666666667%; display:inline-block; text-align:center; border-left:1px solid #545a61; padding:15px 0;}
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_title .cardiovascular_tech ul li{ list-style: none; float: left; width: 100%; text-align: left; display: inline-block;
+padding: 10px 0; margin-bottom: 15px;}
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_title .cardiovascular_tech ul li b{font-family: 'open_sansbold'; font-weight: normal; font-size: 18px; color: #fff;
+text-transform: uppercase; position: relative; background: #00adb3; display: inline-block; width:76.16438356164384%; height: 54px; line-height: 51px; float:left; padding-left:18px; box-sizing:border-box;}
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_title .cardiovascular_tech ul li b:after{content:url(../img/salary_data_tech.png) ; width: 12px;
+height: 70px; position: absolute; left: -12px; top: -8px;}
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_title .cardiovascular_tech ul li span{ background:#062033; font-family: 'open_sansregular'; font-size:18px; color:#fff;  font-weight:normal; line-height:18px; width:23.83561643835616%; float:left; display:inline-block; height:54px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; position:relative; padding: 18px 30px;  box-sizing: border-box;}
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_title .cardiovascular_tech ul li span:after{content:url(../img/salary_data-arrow.png) ; position:absolute; left: -7px; top: -1px; height:70px;}
+#medical_technology_schools #mainpage.program_page.technologist_salray .mts_title .cardiovascular_tech ul li:last-child{ margin-bottom:0;}
+#medical_technology_schools #mainpage.privacy_policy{width:100%; float:left; display:inline-block;}
+#medical_technology_schools #mainpage.privacy_policy p{ font-family: "open_sansregular"; font-size: 16px; line-height: 24px; margin-top:0; margin-top:20px; clear:both;}
+#medical_technology_schools #mainpage.privacy_policy p:last-child{ margin-bottom:0;}
+#medical_technology_schools #mainpage.privacy_policy .last_update{ float:left; width:100%;color: #5a5a5a; font-family: 'open_sansregular'; font-size: 18px; font-weight: normal;
+line-height: 34px; text-align: justify;  margin-bottom: 15px;}
+#medical_technology_schools #mainpage.privacy_policy .last_update p{ margin-top:0;}
+#medical_technology_schools #mainpage.privacy_policy .last_update span{ color:#fd833e;}
+#medical_technology_schools #mainpage.privacy_policy .policylist{ float:left;}
+#medical_technology_schools #mainpage.privacy_policy .policylist ul{display: inline-block;  float: left; margin: 15px 0; width: 100%;}
+#medical_technology_schools #mainpage.privacy_policy .policylist ul li{background: url("../img/source_url.png") no-repeat scroll 2px 9px rgba(0, 0, 0, 0);    font-family: "open_sansregular";    font-size: 16px;    font-weight: normal;    margin-bottom: 5px;    padding-left: 25px;    text-align: left;}
+#medical_technology_schools #mainpage.privacy_policy .mts_title p{ text-align:left;}	
+#medical_technology_schools #mainpage.privacy_policy .heading a{ color:#fd833e; text-decoration:none;}
