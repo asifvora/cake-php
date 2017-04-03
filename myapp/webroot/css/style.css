@@ -104,10 +104,10 @@ ul li {
 body
 { font-size: 16px; color: #465568; font-weight:normal;}
 
-#medical_technology_schools{ width:100%; float:left; padding-top:160px;}
+#medical_technology_schools{ width:100%; float:left; padding-top:10px;}
 #medical_technology_schools #mainpage{width:100%; float:left; display:inline-block;}
- header{ width: 100%; float: left; background: #ffffff; display: inline-block; position: fixed; top: 0; left: 0; z-index: 99999; box-shadow: 0 0 3px #d7d7d7;}
- header .logo{ float:left; padding:45px 0 40px 0;}
+ header{ width: 100%; float: left; background: #ffffff; display: inline-block; top: 0; left: 0; z-index: 99999; box-shadow: 0 0 3px #d7d7d7;}
+ header .logo{ float:left; padding:45px 0 0 0;}
  header .header_rightside{ float:right; display:inline-block; line-height:0; padding:63px 0 0 0;}
  header .header_rightside .search {display: inline-block;
     float: left;

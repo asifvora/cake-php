@@ -41,10 +41,20 @@
 <?= $this->Html->script('fancybox/source/jquery.fancybox.js')?>
 <?= $this->Html->script('fancybox/source/jquery.fancybox.pack.js')?>
 
-<script>
-    $ ( '#birtdate' ).dcalendarpicker ( ) ;</script>
+
 
 <script>
+    $ ( document ).redy ( function ()
+    {
+        alert ( 'test' ) ;
+        $ ( '#form' ).validationEngine () ;
+    } ) ;
+        
+    $ ( '#birtdate' ).dcalendarpicker ( ) ;
+
+</script>
+<script>
+
     var app = angular.module ( "mainApp" , [ "ngRoute" ] ) ;
     app.config ( function ( $routeProvider ) {
         $routeProvider
@@ -227,7 +237,7 @@
                     thumbs : {
                         width : 75 ,
                         height : 50
-                    }
+                    }   
                 }
             } ) ;
         } ) ;

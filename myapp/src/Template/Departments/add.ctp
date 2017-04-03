@@ -14,16 +14,17 @@
             </ul>
         </nav>
         <div class="departments form large-9 medium-8 columns content">
-            <?= $this->Form->create($department)?>
+            <?php echo $this->Form->create($department,['id'=>'form']);?>
             <fieldset>
                 <legend><?= __('Add Department')?></legend>
+              
                 <?php
-                echo $this->Form->control('name', array('type'=>'text', 'name'=>'name[][name]', 'id'=>'name', 'style'=>'width:500px;', 'oninvalid'=>'setCustomValidity("Enter Department Name")'));
-                ?>adad
+                echo $this->Form->control('name', array('type'=>'text', 'name'=>'name[][name]', 'id'=>'name', 'style'=>'width:500px;', 'class'=>'validate[required]'));
+                ?>
                 <div class="add_div"> </div>
             </fieldset>
-            <?php echo $this->Html->link('Add More', '#', array('style'=>'float:right;', 'class'=>'add_more', 'onclick'=>'Add_More() ;', 'title'=>'Add More'));?> <br><br>
-            <?= $this->Form->button(__('Save'));?>
+            <?php echo $this->Html->link('Add More','#', array('style'=>'float:right;', 'class'=>'add_more', 'onclick'=>'Add_More() ;', 'title'=>'Add More'));?> <br><br>
+            <?= $this->Form->button(__('Save'), array('formnovalidate' => true)); ?>
             <?= $this->Form->button('Reset', array('type'=>'reset', 'style'=>'float:right;margin-right:10px;'));?>
             <?= $this->Form->end()?>
         </div>
@@ -34,19 +35,21 @@
     {
         var maxLimit = 2 ;
         var start = 1 ;
-        
+
         if ( start <= maxLimit )
         {
-            $ ( ".add_div" ).append ( '<div id="add_more" ><?php echo $this->Form->control('name', array('type'=>'text', 'name'=>'name[][name]', 'required'=>'required', 'style'=>'width:500px;', 'oninvalid'=>'setCustomValidity("Enter Department Name")'));?><?php echo $this->Html->link('Remove', '#', array('onclick'=>'Remove_More() ;', 'title'=>'Remove'));?> <br></div>' ) ;
+            $ ( ".add_div" ).append ( '<div id="add_more" ><?php echo $this->Form->control('name', array('type'=>'text', 'name'=>'name[][name]', 'required'=>'required', 'style'=>'width:500px;', 'oninvalid'=>'setCustomValidity("Enter Department Name")','oninput'=>'setCustomValidity("")'));?><?php echo $this->Html->link('Remove', '#', array('onclick'=>'Remove_More() ;', 'title'=>'Remove'));?> <br></div>' ) ;
             start++ ;
         }
-
-
     }
 
-    function Remove_More (  )
+    function Remove_More ( )
     {
-        $ ( "#add_more" ).remove () ;
+        $ ( "#add_more" ).remove ( ) ;
     }
 
+   
 </script>
+
+
+

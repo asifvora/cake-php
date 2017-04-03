@@ -48,9 +48,8 @@ $this->Html->addCrumb(__('Employees'));
                             <td><?= h($employee->email)?></td>
                             <td><?= h($employee->mobile)?></td>
                             <td>
-
-                                <a class="fancybox-effects-d" href="<?= $this->Html->image('upload/'.$employee->image)?>" title="test">
-                                    <?= $this->Html->image('upload/'.$employee->image, array('height'=>'100', 'width'=>'100', 'alt'=>'img'))?> 
+                                <a class="fancybox-effects-d" href="/img/upload/<?php echo $employee->image;?>" title="<?= h($employee->name)?>">
+                                    <img src="/img/upload/<?php echo $employee->image;?>" height="100" width="100" alt="Image">
                                 </a>
                             </td>
                             <td><?= h($employee->created)?></td>

@@ -33,7 +33,7 @@ $this->Html->addCrumb(__('View'));
                     <th scope="row"><?= __('Name')?></th>
                     <td><?= h($employee->name)?></td>
                 </tr>
-                
+
                 <tr>
                     <th scope="row"><?= __('Email')?></th>
                     <td><?= h($employee->email)?></td>
@@ -58,11 +58,15 @@ $this->Html->addCrumb(__('View'));
                     <th scope="row"><?= __('Hobby')?></th>
                     <td><?= h($employee->hobby)?></td>
                 </tr>
-               <tr>
+                <tr>
                     <th scope="row"><?= __('Image')?></th>
-                <td><?= $this->Html->image('upload/'.$employee->image,array('height' => '100', 'width' => '100','alt'=>'img')) ?> </td>
+                    <td>
+                        <a class="fancybox-effects-d" href="/img/upload/<?php echo $employee->image;?>" title="<?= h($employee->name)?>">
+                            <img src="/img/upload/<?php echo $employee->image;?>" height="100" width="100" alt="Image">
+                        </a>
+                    </td>
                 </tr>
-                
+
                 <tr>
                     <th scope="row"><?= __('Created')?></th>
                     <td><?= h($employee->created)?></td>

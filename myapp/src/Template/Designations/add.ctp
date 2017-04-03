@@ -14,14 +14,17 @@
     </ul>
 </nav>
 <div class="designations form large-9 medium-8 columns content">
-    <?= $this->Form->create($designation) ?>
+    <?= $this->Form->create($designation,['id'=>'form']);?>
     <fieldset>
         <legend><?= __('Add Designation') ?></legend>
         <?php
-            echo $this->Form->control('name');
+            echo $this->Form->control('name',[ 'class'=>'validate[required]']);
+        ?>
+        <?php
+            echo $this->Form->control('test',[ 'class'=>'validate[required]']);
         ?>
     </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->button(__('Submit'), array('formnovalidate' => true)); ?>
     <?= $this->Form->end() ?>
 </div>
 </section>
