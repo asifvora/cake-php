@@ -20,7 +20,6 @@ class EmployeesController extends AppController
         'contain'=>array('Departments', 'Designations')
     );
 
-    
     public function home()
     {
         //    pr($this->request);
@@ -37,12 +36,13 @@ class EmployeesController extends AppController
     {
         
     }
-public function initialize()
+
+    public function initialize()
     {
-                $this->loadComponent('ImageUpload');
+        //load the image component
+        $this->loadComponent('ImageUpload');
     }
 
-       
     /**
      * Index method
      *
@@ -51,13 +51,13 @@ public function initialize()
     public function index()
     {
         try{
-            
+
             $this->set('employees', $this->paginate($this->Employees));
             $this->set('_serialize', ['employees']);
         }catch(Exception $e){
             echo 'Caught exception: ', $e->getMessage(), "\n";
         }
-        
+
 //         $curl=curl_init();
 //        curl_setopt($curl, CURLOPT_URL, "http://www.google.co.in");
 //        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
