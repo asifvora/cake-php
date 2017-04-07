@@ -12,6 +12,12 @@ use App\Controller\AppController;
 class EmployeesController extends AppController
 {
 
+    public function initialize()
+    {
+        //load the image component
+        $this->loadComponent('Flash');
+    }
+
     public $paginate=array(
         'limit'=>4,
         'order'=>array(
@@ -35,12 +41,6 @@ class EmployeesController extends AppController
     public function rahul()
     {
         
-    }
-
-    public function initialize()
-    {
-        //load the image component
-        $this->loadComponent('ImageUpload');
     }
 
     /**

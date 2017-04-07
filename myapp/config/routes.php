@@ -49,10 +49,12 @@ Router::scope('/', function (RouteBuilder $routes){
      * its action called 'display', and we pass a param to select the view file
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
-   // $routes->connect('/', ['controller'=>'Pages', 'action'=>'display', 'index']);
-    $routes->connect('/', ['controller'=>'Employees', 'action'=>'home']);
+    $routes->connect('/', ['controller'=>'Users', 'action'=>'login']);
 
-    $routes->connect('/asif/rahul/:id', ['controller'=>'Users', 'action'=>'view'], ['id'=>'\d+', 'pass'=>['id']]);
+    // $routes->connect('/', ['controller'=>'Pages', 'action'=>'display', 'index']);
+    $routes->connect('/Employees', ['controller'=>'Employees', 'action'=>'index']);
+
+    $routes->connect('/asif/:id', ['controller'=>'Users', 'action'=>'view'], ['id'=>'\d+', 'pass'=>['id']]);
 
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
@@ -63,6 +65,7 @@ Router::scope('/', function (RouteBuilder $routes){
     $routes->connect('/Categories', ['controller'=>'Categories', 'action'=>'index', 'index']);
     $routes->connect('/articles', ['controller'=>'Articles', 'action'=>'index', 'index']);
     $routes->connect('/users', ['controller'=>'Users', 'action'=>'index', 'index']);
+    $routes->connect('/departments/edit/:id', ['controller'=>'Departments', 'action'=>'edit'], ['id'=>'\d+', 'pass'=>['id']]);
 
     /**
      * Connect catchall routes for all controllers.

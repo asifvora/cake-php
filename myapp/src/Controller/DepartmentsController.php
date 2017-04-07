@@ -12,6 +12,21 @@ use App\Controller\AppController;
 class DepartmentsController extends AppController
 {
 
+//    public function initialize()
+//    {
+//        parent::initialize();
+//        $this->loadComponent('RequestHandler', [
+//            'checkHttpCache'=>false
+//        ]);
+//    }
+
+
+    public function initialize()
+    {
+        parent::initialize();
+        $this->loadComponent('RequestHandler');
+    }
+
     public $paginate=array(
         'limit'=>5,
         'order'=>array(
@@ -71,6 +86,59 @@ class DepartmentsController extends AppController
     }
 
     /**
+     * Edit Using Ajax & Model
+     * @return type    
+     *  
+     */
+    public function editAjax($id=null)
+    {
+        // Set Render False
+        $this->autoRender=false;
+        //Ajax Detection
+        if($this->request->is('Ajax')){
+            $department=$this->Departments->get($this->request->data['id']);
+            $this->set(compact('department'));
+            $this->set('_serialize', ['department']);
+            $this->render('edit_ajax', '', null);
+        }
+    }
+
+    /*     * Viewt Using Ajax & Model
+     * @return type     
+     */
+
+    public function viewAjax($id=null)
+    {
+        // Set Render False
+        $this->autoRender=false;
+        //Ajax Detection
+        if($this->request->is('Ajax')){
+            $department=$this->Departments->get($this->request->data['id']);
+            $this->set(compact('department'));
+            $this->set('_serialize', ['department']);
+            $this->render('view_ajax', '', null);
+        }
+    }
+
+    /*
+     *   * Viewt Using Ajax & Model
+     * @return type     
+     */
+
+    public function deleteAjax($id=null)
+    {
+        // Set Render False
+        $this->autoRender=false;
+        //Ajax Detection
+        if($this->request->is('Ajax')){
+            $department=$this->Departments->get($this->request->data['id']);
+            $this->set(compact('department'));
+            $this->set('_serialize', ['department']);
+            $this->render('delete_ajax', '', null);
+        }
+    }
+
+    /**
      * Edit method
      *
      * @param string|null $id Department id.
@@ -104,14 +172,14 @@ class DepartmentsController extends AppController
      */
     public function delete($id=null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $department=$this->Departments->get($id);
-        if($this->Departments->delete($department)){
-            $this->Flash->success(__('The department has been deleted.'));
-        }else{
-            $this->Flash->error(__('The department could not be deleted. Please, try again.'));
-        }
-
+        $this->request->allowMethod(['ajax']);
+        $department=$this->Departments->get($this->request->data['id']);
+        $this->Departments->delete($department);
+//        if($this->Departments->delete($department)){
+//            //  $this->Flash->success(__('The department has been deleted.'));
+//        }else{
+//            // $this->Flash->error(__('The department could not be deleted. Please, try again.'));
+//        }
         return $this->redirect(['action'=>'index']);
     }
 

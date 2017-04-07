@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Model\Table;
 
 use Cake\ORM\Query;
@@ -48,14 +49,34 @@ class UsersTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('id')
-            ->allowEmpty('id', 'create');
+                ->integer('id')
+                ->allowEmpty('id', 'create');
 
         $validator
-            ->allowEmpty('username');
+                ->requirePresence('name', 'create')
+                ->notEmpty('name','Enter Name');
 
         $validator
-            ->allowEmpty('password');
+                ->email('email')
+                ->requirePresence('email', 'create')
+                ->notEmpty('email','Enter Email');
+
+        $validator
+                ->requirePresence('username', 'create')
+                ->notEmpty('username','Enter User name');
+
+        $validator
+                ->requirePresence('password', 'create')
+                ->notEmpty('password','Enter Password');
+
+        $validator
+                ->requirePresence('role', 'create')
+                ->notEmpty('role','Select Role')
+                ->add('role', 'inList', [
+                    'rule'=>['inList', ['admin', 'user']],
+                    'message'=>'Please enter a valid role'
+        ]);
+
 
         return $validator;
     }
@@ -69,8 +90,10 @@ class UsersTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
+        $rules->add($rules->isUnique(['email']));
         $rules->add($rules->isUnique(['username']));
 
         return $rules;
     }
+
 }

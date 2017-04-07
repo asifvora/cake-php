@@ -1,86 +1,49 @@
-<?php
-/**
-  * @var \App\View\AppView $this
-  */
-?>
-<section id="medical_technology_schools">
-  <section id="mainpage">
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Department'), ['action' => 'edit', $department->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Department'), ['action' => 'delete', $department->id], ['confirm' => __('Are you sure you want to delete # {0}?', $department->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Departments'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Department'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Employees'), ['controller' => 'Employees', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Employee'), ['controller' => 'Employees', 'action' => 'add']) ?> </li>
-    </ul>
-</nav>
-<div class="departments view large-9 medium-8 columns content">
-    <h3><?= h($department->name) ?></h3>
-    <table class="vertical-table">
-        <tr>
-            <th scope="row"><?= __('Name') ?></th>
-            <td><?= h($department->name) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id') ?></th>
-            <td><?= $this->Number->format($department->id) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Created') ?></th>
-            <td><?= h($department->created) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Modified') ?></th>
-            <td><?= h($department->modified) ?></td>
-        </tr>
-    </table>
-    <div class="related">
-        <h4><?= __('Related Employees') ?></h4>
-        <?php if (!empty($department->employees)): ?>
-        <table cellpadding="0" cellspacing="0">
-            <tr>
-                <th scope="col"><?= __('Id') ?></th>
-                <th scope="col"><?= __('Department Id') ?></th>
-                <th scope="col"><?= __('Designation Id') ?></th>
-                <th scope="col"><?= __('Name') ?></th>
-                <th scope="col"><?= __('Email') ?></th>
-                <th scope="col"><?= __('Mobile') ?></th>
-                <th scope="col"><?= __('Birtdate') ?></th>
-                <th scope="col"><?= __('Gender') ?></th>
-                <th scope="col"><?= __('Address') ?></th>
-                <th scope="col"><?= __('Hobby') ?></th>
-                <th scope="col"><?= __('Image') ?></th>
-                <th scope="col"><?= __('Created') ?></th>
-                <th scope="col"><?= __('Modified') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
-            </tr>
-            <?php foreach ($department->employees as $employees): ?>
-            <tr>
-                <td><?= h($employees->id) ?></td>
-                <td><?= h($employees->department_id) ?></td>
-                <td><?= h($employees->designation_id) ?></td>
-                <td><?= h($employees->name) ?></td>
-                <td><?= h($employees->email) ?></td>
-                <td><?= h($employees->mobile) ?></td>
-                <td><?= h($employees->birtdate) ?></td>
-                <td><?= h($employees->gender) ?></td>
-                <td><?= h($employees->address) ?></td>
-                <td><?= h($employees->hobby) ?></td>
-                <td><?= h($employees->image) ?></td>
-                <td><?= h($employees->created) ?></td>
-                <td><?= h($employees->modified) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Employees', 'action' => 'view', $employees->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Employees', 'action' => 'edit', $employees->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Employees', 'action' => 'delete', $employees->id], ['confirm' => __('Are you sure you want to delete # {0}?', $employees->id)]) ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </table>
-        <?php endif; ?>
+
+<div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Department Detail</h4>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label for="" class="control-label col-xs-4"><h6><b>Department Id :</b></h6></label>
+                <div class="input-group col-xs-7">
+                    <h5><?php echo $department->id;?></h5>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="control-label col-xs-4"><h6><b>Department Name :</b></h6></label>
+                <div class="input-group col-xs-7">
+                    <h5><?php echo $department->name;?></h5>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="" class="control-label col-xs-4"><h6><b>Created :</b></h6></label>
+                <div class="input-group col-xs-7">
+                    <h5><?php echo $department->created;?></h5>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="" class="control-label col-xs-4"><h6><b>Modified :</b></h6></label>
+                <div class="input-group col-xs-7">
+                    <h5><?php echo $department->modified;?></h5>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+
     </div>
 </div>
-  </section>
-</section>
+
+
+
+
+
+
+

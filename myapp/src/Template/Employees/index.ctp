@@ -24,6 +24,8 @@ $this->Html->addCrumb(__('Employees'));
         <div class="articles index large-9 medium-8 columns content">
             <h3><?= __('Employees')?></h3>
             <table cellpadding="0" cellspacing="0">
+                
+
                 <thead>
                     <tr>
                         <th scope="col"><?= $this->Paginator->sort('id')?></th>
@@ -63,6 +65,8 @@ $this->Html->addCrumb(__('Employees'));
                     <?php endforeach;?>
                 </tbody>
             </table>
+
+
             <div class="paginator">
                 <ul class="pagination">
                     <?= $this->Paginator->first('<< '.__('first'))?>
@@ -73,5 +77,8 @@ $this->Html->addCrumb(__('Employees'));
                 </ul>
                 <p><?= $this->Paginator->counter(['format'=>__('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')])?></p>
             </div>
-        </div>
-    </section></section>
+
+    
+    </section>
+</section>
+

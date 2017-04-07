@@ -33,12 +33,60 @@
 <?= $this->Html->script('message.js')?>
 <?= $this->Html->script('datepicker/jquery-3.2.0.js')?>
 <?= $this->Html->script('datepicker/dcalendar.picker.js')?>
+<?= $this->Html->script('ng/1.5.6-angular-route.min.js')?>
+<?= $this->Html->script('ng/1.5.6-angular.min.js')?>
+<?= $this->Html->script('ng/ng/app/app.js')?>
+<?= $this->Html->script('fancybox/source/helpers/jquery.fancybox-buttons.js')?>
+<?= $this->Html->script('fancybox/source/helpers/jquery.fancybox-media.js')?>
+<?= $this->Html->script('fancybox/source/helpers/jquery.fancybox-thumbs')?>
 <?= $this->Html->script('fancybox/source/jquery.fancybox.js')?>
-<?= $this->Html->script('bootstrap.min.js')?>
+<?= $this->Html->script('fancybox/source/jquery.fancybox.pack.js')?>
+<?= $this->Html->script('model/rmodal.js')?>
 
 
 
+<script type="text/javascript">
+    /*window.onload = function () {
+        var modal = new RModal ( document.getElementById ( 'modal' ) , {
+            //content: 'Abracadabra'
+            beforeOpen : function ( next ) {
+                console.log ( 'beforeOpen' ) ;
+                next () ;
+            }
+            , afterOpen : function () {
+                console.log ( 'opened' ) ;
+            }
 
+            , beforeClose : function ( next ) {
+                console.log ( 'beforeClose' ) ;
+                next () ;
+            }
+            , afterClose : function () {
+                console.log ( 'closed' ) ;
+            }
+            // , bodyClass: 'modal-open'
+            // , dialogClass: 'modal-dialog'
+            // , dialogOpenClass: 'animated fadeIn'
+            // , dialogCloseClass: 'animated fadeOut'
+
+            // , focus: true
+            // , focusElements: ['input.form-control', 'textarea', 'button.btn-primary']
+
+            // , escapeClose: true
+        } ) ;
+
+        document.addEventListener ( 'keydown' , function ( ev ) {
+            modal.keydown ( ev ) ;
+        } , false ) ;
+
+        document.getElementById ( 'showModal' ).addEventListener ( "click" , function ( ev ) {
+            ev.preventDefault () ;
+            modal.open () ;
+        } , false ) ;
+
+        window.modal = modal ;
+    }*/
+</script>
 <script>
 
     /*var app = angular.module ( "mainApp" , [ "ngRoute" ] ) ;

@@ -19,23 +19,42 @@ $this->Html->addCrumb(__('Add'));
             <fieldset>
 
                 <legend><?= __('Add Employee')?></legend>
+                <div id="alert"></div>
+
                 <?php
-                echo $this->Form->control('department_id', ['empty'=>'Select Department', 'options'=>$departments, 'class'=>'validate[required]']);
-                echo $this->Form->control('designation_id', ['empty'=>'Select Designation', 'options'=>$designations, 'class'=>'validate[required]']);
-                echo $this->Form->control('name');
-                echo $this->Form->control('email', ['type'=>'email', 'class'=>'validate[required]']);
-                echo $this->Form->control('mobile', ['class'=>'validate[required]']);
-                echo $this->Form->control('birtdate', ['class'=>'validate[required]']);
-                echo $this->Form->control('gender', ['type'=>'radio', 'options'=>array('1'=>'Male', '2'=>'Female'), 'class'=>'validate[required]']);
-                echo $this->Form->control('address', ['type'=>'textarea', 'class'=>'validate[required]']);
-                echo $this->Form->control('hobby', ['type'=>'select', 'multiple'=>'checkbox', 'options'=>$options, 'class'=>'validate[required]']);
-                echo $this->Form->control('image', ['type'=>'file', 'name'=>'image', 'label'=>'Update Profile Picture', 'class'=>'validate[required]']);
+                echo $this->Form->control('department_id', ['empty'=>'Select Department', 'options'=>$departments]);
+                echo $this->Form->control('designation_id', ['empty'=>'Select Designation', 'options'=>$designations]);
+                echo $this->Form->control('name', ['id'=>'name']);
+                echo $this->Form->control('email');
+                echo $this->Form->control('mobile');
+                echo $this->Form->control('birtdate', ['type'=>'text']);
+                echo $this->Form->control('gender', ['type'=>'radio', 'options'=>array('1'=>'Male', '2'=>'Female')]);
+                echo $this->Form->control('address', ['type'=>'textarea']);
+                echo $this->Form->control('hobby', ['type'=>'select', 'multiple'=>'checkbox', 'options'=>$options]);
+                echo $this->Form->control('image', ['type'=>'file', 'name'=>'image', 'label'=>'Update Profile Picture']);
                 ?>
             </fieldset>
 
-            <?= $this->Form->button(__('Submit'), array('formnovalidate'=>true));?>
+            <?= $this->Form->button(__('Submit'));?>
             <?= $this->Form->button('Reset', array('type'=>'reset'));?>
             <?= $this->Form->end()?>
         </div>
     </section>
 </section>
+
+<script>
+// just for the demos, avoids form submit
+    jQuery.validator.setDefaults ( {
+        debug : true ,
+        success : "valid"
+    } ) ;
+    $ ( "#form" ).validate ( {
+        alert( 'Test' ) ;
+                rules : {
+                    name : {
+                        required : true ,
+                        min : 3
+                    }
+                }
+    } ) ;
+</script>

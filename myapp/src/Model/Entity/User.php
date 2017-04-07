@@ -1,15 +1,18 @@
 <?php
+namespace App\Model\Entity;
 
-namespace App\Model\Entity ;
-use Cake\Auth\DefaultPasswordHasher ;
-use Cake\ORM\Entity ;
+use Cake\ORM\Entity;
+use Cake\Auth\DefaultPasswordHasher;
 
 /**
  * User Entity
  *
  * @property int $id
+ * @property string $name
+ * @property string $email
  * @property string $username
  * @property string $password
+ * @property string $role
  * @property \Cake\I18n\Time $created
  * @property \Cake\I18n\Time $modified
  */
@@ -26,9 +29,9 @@ class User extends Entity
      * @var array
      */
     protected $_accessible = [
-        '*' => true ,
+        '*' => true,
         'id' => false
-    ] ;
+    ];
 
     /**
      * Fields that are excluded from JSON versions of the entity.
@@ -37,19 +40,14 @@ class User extends Entity
      */
     protected $_hidden = [
         'password'
-    ] ;
-
-    protected function _setPassword( $password )
-    {
-        if ( strlen ( $password ) > 0 )
-        {
-            return (new DefaultPasswordHasher ) -> hash ( $password ) ;
-        }
-    }
+    ];
     
-    protected function _getFullName()
-    {
-        
+     public function get_all_users() {
+        // find users and return to controller
+        return $this->User->find('all');
     }
-
+    protected function _setPassword($password)
+    {
+        return (new DefaultPasswordHasher)->hash($password);
+    }
 }
