@@ -18,6 +18,7 @@ namespace App\Controller;
 
 use Cake\Controller\Controller;
 use Cake\Event\Event;
+use Cake\Core\Configure;
 
 /**
  * Application Controller
@@ -57,6 +58,11 @@ class AppController extends Controller
 
     public function beforeFilter(Event $event)
     {
+        $this->Auth->fields=array(
+            'username'=>'username',
+            'username'=>'email',
+            'password'=>'password'
+        );
         $this->Auth->allow('login');
     }
 

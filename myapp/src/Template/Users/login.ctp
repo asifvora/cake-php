@@ -6,8 +6,8 @@
             <h4 class="">Log In</h4>
             <?= $this->Form->create()?>
             <div class="form-group">
-                <label class="info-title" for="exampleInputEmail1">Username <span>*</span></label>
-                <input type="text" class="form-control unicase-form-control text-input" name="username" id="username" required="" placeholder="Enter user Name">
+                <label class="info-title" for="exampleInputEmail1">Username or Email <span>*</span></label>
+                <input type="text" class="form-control unicase-form-control text-input" name="username" id="username" required="" placeholder="Enter user Name Or Email">
             </div>
             <div class="form-group">
                 <label class="info-title" for="exampleInputPassword1">Password <span>*</span></label>

@@ -21,9 +21,27 @@ class UsersController extends AppController
     {
         $this->viewBuilder()->layout('admin');
         if($this->request->is('post')){
+            pr($this->request->data);
+
+
+
+            if(!filter_var($this->request->data['username'], FILTER_VALIDATE_EMAIL)===false){
+                $this->Auth->config('authenticate', [
+                    'Form'=>['fields'=>['username'=>'username', 'username'=>'email', 'password'=>'password']]
+                ]);
+                $this->Auth->constructAuthenticate();
+                $this->request->data['email']=$this->request->data['username'];
+                unset($this->request->data['username']);
+            }else{
+                $this->Auth->config('authenticate', [
+                    'Form'=>['fields'=>['username'=>'username', 'password'=>'password']]
+                ]);
+            }
+
             $user=$this->Auth->identify();
             if($user){
                 $this->Auth->setUser($user);
+                $this->Flash->success(__('Wel Come-'.ucfirst($user['name'])));
                 return $this->redirect($this->Auth->redirectUrl());
             }
             $this->Flash->error(__('Invalid username or password, try again'));
