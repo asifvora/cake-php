@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Users Controller
@@ -36,6 +37,7 @@ class UsersController extends AppController
 
             $user=$this->Auth->identify();
             if($user){
+
                 $this->Auth->setUser($user);
                 $this->Flash->success(__('Wel Come-'.ucfirst($user['name'])));
                 return $this->redirect($this->Auth->redirectUrl());
@@ -44,6 +46,8 @@ class UsersController extends AppController
         }
     }
 
+   
+
     /**
      * *
      * LogOut
@@ -51,7 +55,7 @@ class UsersController extends AppController
      */
     public function logout()
     {
-        $this->Flash->success(__('You are Log Out'));
+        $this->Flash->success(__('You Successfully Log Out'));
         return $this->redirect($this->Auth->logout());
     }
 

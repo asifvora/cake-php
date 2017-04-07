@@ -48,7 +48,7 @@ class AppController extends Controller
         $this->loadComponent('Flash');
         $this->loadComponent('ImageUpload');
         $this->loadComponent('Math');
-        
+
         $this->loadComponent('Auth', [
             'authenticate'=>['Form'=>['fields'=>['username'=>'username', 'password'=>'password']]],
             'loginAction'=>['controller'=>'Users', 'action'=>'login'],
@@ -57,9 +57,30 @@ class AppController extends Controller
         ]);
     }
 
+    public function isAuthorized($user)
+    {
+        // Admin can access every action
+        if(isset($user['role'])&&$user['role']==='Admin'){
+            return true;
+        }
+        // Default deny
+        return false;
+    }
+
     public function beforeFilter(Event $event)
     {
         $this->Auth->allow('login');
+    }
+
+    public function afterFilter(Event $event)
+    {
+        parent::afterFilter($event);
+        if(isset($user['role'])&& $user['role']==='Admin'){
+            $this->Auth->allow(['logout', 'index', 'edit', 'delete', 'view']);
+            return true;
+        }else{
+            $this->Auth->allow(['logout', 'index', 'edit', 'delete', 'view']);
+        }
     }
 
     /**

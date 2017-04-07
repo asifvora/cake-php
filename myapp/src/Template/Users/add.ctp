@@ -18,7 +18,7 @@
         echo $this->Form->control('email');
         echo $this->Form->control('username');
         echo $this->Form->control('password');
-        echo $this->Form->control('role', ['empty'=>'Select Role ', 'type'=>'select', 'options'=>array('1'=>'Admin', '2'=>'User')]);
+        echo $this->Form->control('role', ['empty'=>'Select Role ', 'type'=>'select', 'options'=>array('Admin'=>'Admin', 'User'=>'User')]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Save'), array('formnovalidate'=>true));?>
