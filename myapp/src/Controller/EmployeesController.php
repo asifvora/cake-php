@@ -14,8 +14,7 @@ class EmployeesController extends AppController
 
     public function initialize()
     {
-        //load the image component
-        $this->loadComponent('Flash');
+        parent::initialize();
     }
 
     public $paginate=array(
