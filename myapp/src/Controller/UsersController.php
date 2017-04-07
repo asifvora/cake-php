@@ -21,22 +21,18 @@ class UsersController extends AppController
     {
         $this->viewBuilder()->layout('admin');
         if($this->request->is('post')){
-            pr($this->request->data);
 
 
 
             if(!filter_var($this->request->data['username'], FILTER_VALIDATE_EMAIL)===false){
                 $this->Auth->config('authenticate', [
-                    'Form'=>['fields'=>['username'=>'username', 'username'=>'email', 'password'=>'password']]
+                    'Form'=>['fields'=>['username'=>'email', 'password'=>'password']]
                 ]);
                 $this->Auth->constructAuthenticate();
                 $this->request->data['email']=$this->request->data['username'];
                 unset($this->request->data['username']);
-            }else{
-                $this->Auth->config('authenticate', [
-                    'Form'=>['fields'=>['username'=>'username', 'password'=>'password']]
-                ]);
             }
+            pr($this->request->data);
 
             $user=$this->Auth->identify();
             if($user){
@@ -55,6 +51,7 @@ class UsersController extends AppController
      */
     public function logout()
     {
+        $this->Flash->success(__('You are Log Out'));
         return $this->redirect($this->Auth->logout());
     }
 

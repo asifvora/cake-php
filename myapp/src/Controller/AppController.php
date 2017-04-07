@@ -48,6 +48,7 @@ class AppController extends Controller
         $this->loadComponent('Flash');
         $this->loadComponent('ImageUpload');
         $this->loadComponent('Math');
+        
         $this->loadComponent('Auth', [
             'authenticate'=>['Form'=>['fields'=>['username'=>'username', 'password'=>'password']]],
             'loginAction'=>['controller'=>'Users', 'action'=>'login'],
@@ -58,11 +59,6 @@ class AppController extends Controller
 
     public function beforeFilter(Event $event)
     {
-        $this->Auth->fields=array(
-            'username'=>'username',
-            'username'=>'email',
-            'password'=>'password'
-        );
         $this->Auth->allow('login');
     }
 
